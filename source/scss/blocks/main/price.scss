@@ -1,0 +1,51 @@
+.prices {
+  position: relative;
+}
+
+.prices__wrapper {
+  position: absolute;
+  width: 320px;
+}
+
+.price {
+  width: 280px;
+  border: 2px solid $white;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.price--active {
+  width: 280px;
+}
+
+.price__wrapper {
+  background-color: #283645;
+}
+
+.price__name {
+  display: block;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  color: $white;
+  text-align: center;
+}
+
+.price__tag {
+  display: block;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  color: $white;
+  text-align: center;
+}
+
+.price__characteristics {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}

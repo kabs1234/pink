@@ -1,0 +1,44 @@
+.advantages {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 318px;
+  background-color: #F2F2F2;
+
+  &::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 157px;
+    height: 277px;
+    margin: 0 auto;
+    background: url('../../../img/decorative/screen-friends-mobile.jpg') 8px 35px no-repeat,
+    url('../../../img/decorative/phone-background-mobile.png') 0 0 no-repeat;
+  }
+}
+
+.advantages__termin {
+  margin: 0;
+  margin-bottom: 12px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+.advantages__description {
+  margin: 0;
+  padding: 0 21px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+
+  &:not(:last-of-type) {
+    margin-bottom: 31px;
+  }
+}

@@ -1,0 +1,27 @@
+.slider {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.slider__item {
+  &:not(:last-child) {
+    margin-right: 13px;
+  }
+}
+
+.slider__item--active .slider__button {
+  background-color: $white;
+  box-shadow: 0 0 0 3px #283645 inset;
+}
+
+.slider__button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba($color: #283645, $alpha: 0.3);
+}

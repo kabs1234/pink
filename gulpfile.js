@@ -141,7 +141,7 @@ exports.server = server;
 // Watcher
 const watcher = () => {
   gulp.watch('./source/scss/**/*.scss', gulp.series(styles));
-  gulp.watch('./source/js/app', browserSync.reload);
+  gulp.watch('./source/js/app.js', browserSync.reload);
   gulp.watch('source/*.html').on('change', browserSync.reload);
 };
 

@@ -1,0 +1,43 @@
+.main__reviews {
+  margin-bottom: 555px;
+}
+
+.reviews {
+  padding-top: 41px;
+}
+
+.reviews__list {
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.reviews__item {
+  display: none;
+
+  &--active {
+    display: list-item;
+  }
+}
+
+.reviews__author {
+  display: block;
+  margin-bottom: 13px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+
+.reviews__text {
+  margin: 0;
+  padding: 0 20px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+}

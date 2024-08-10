@@ -1,0 +1,44 @@
+.platforms {
+  padding: 28px 20px 31px;
+  background-color: #1D2631;
+}
+
+.platforms__download-button {
+  margin-bottom: 32px;
+  padding: 15.5px 36px;
+  border: 3px solid #FFFFFF;
+  border-radius: 29px;
+  display: block;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: $white;
+  text-decoration: none;
+}
+
+.platforms__list {
+  margin: 0 38px;
+  margin-bottom: 17px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.platforms__item {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.platforms__description {
+  margin: 0;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: $white;
+  text-align: center;
+}
