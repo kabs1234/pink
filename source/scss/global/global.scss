@@ -31,6 +31,10 @@
        url('../../fonts/OpenSans-Light.woff') format(woff),
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -45,5 +49,8 @@
 }
 
 body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
 }

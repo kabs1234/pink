@@ -1,0 +1,19 @@
+.gallery {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.photos__gallery {
+  margin: 0 20px;
+}
+
+.gallery__image {
+  display: block;
+}
+
+.gallery__item {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

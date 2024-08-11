@@ -1,0 +1,32 @@
+.catalog__promo {
+  min-height: 171px;
+  padding-top: 29px;
+  margin-bottom: 44px;
+}
+
+.promo {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 237px;
+    background: $black url('../../../img/decorative/promo-tablet.png') 50% 0px/660px 237px no-repeat;
+    background-size: auto;
+    z-index: -1;
+  }
+}
+
+.promo__heading {
+  margin: 0;
+  padding: 0 5px;
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32.68px;
+  text-align: center;
+
+  &--white-text {
+    color: $white;
+  }
+}
