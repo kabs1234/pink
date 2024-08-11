@@ -1,0 +1,122 @@
+.upload__text {
+  margin: 0;
+  margin-bottom: 42px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+
+  &--blue-text {
+    color: #283645;
+  }
+}
+
+.upload__upload-menu {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0 41px;
+}
+
+.upload-menu {
+  &--grey {
+    background-color: #F2F2F2;
+  }
+}
+
+.upload-menu__uploading-image {
+  margin: 0 auto 41px;
+  display: block;
+}
+
+.upload-menu__wrapper--mobile {
+  margin-bottom: 74px;
+}
+
+.upload-menu__filters {
+  margin: 0 69px 35px 57px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.upload-menu__filter {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.upload-menu__filter-button {
+  padding: 0;
+  border: none;
+}
+
+.upload-menu__effect-range {
+  width: 240px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #283645;
+  display: block;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.upload-menu__effect-range::-webkit-slider-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $white;
+  border: 2px solid #D22856;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.upload-menu__effect-range::-moz-slider-thumb {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: $white;
+  border: 2px solid #D22856;
+  cursor: pointer;
+}
+
+.upload__button {
+  width: 280px;
+  min-height: 55px;
+  margin: 0 auto 12px;
+  padding: 0;
+  border: 3px solid #D22856;
+  border-radius: 30px;
+  display: block;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+
+  &--red-text {
+    color: #D22856;
+  }
+}
+
+.upload__cancel-upload {
+  width: 280px;
+  min-height: 55px;
+  margin: 0 auto;
+  padding: 0;
+  border: 3px solid rgba($color: #283645, $alpha: 0.1);;
+  border-radius: 30px;
+  display: block;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: center;
+
+  &--light-text {
+    color: rgba($color: #283645, $alpha: 0.1);
+  }
+}

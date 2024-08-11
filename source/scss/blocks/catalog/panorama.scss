@@ -2,6 +2,32 @@
   margin-bottom: 20px;
 }
 
+.panorama__image-wrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 140px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D22856;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
 .panorama__image {
   display: block;
 }
