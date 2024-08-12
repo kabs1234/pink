@@ -1,0 +1,53 @@
+.fieldset--platform {
+  width: 100%;
+  padding: 42px 0 34px;
+}
+
+.fieldset--platform .fieldset__list {
+  width: 280px;
+  margin: 75px auto 0;
+}
+
+.fieldset--platform .fieldset__item {
+  &:not(:last-child) {
+    margin-bottom: 33px;
+  }
+}
+
+.fieldset--platform .fieldset__label {
+  display: flex;
+}
+
+.fieldset--platform .fieldset__input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  min-height: 0;
+  margin: 0;
+  appearance: none;
+  border: none;
+}
+
+.fieldset--platform .fieldset__text-value {
+  margin: 0;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.fieldset--platform .fieldset__radio {
+  position: relative;
+  top: -8px;
+  height: 41px;
+  width: 41px;
+  margin-right: 29px;
+  border: 2px solid #E5E5E5;
+  border-radius: 50%;
+  background: #FFFFFF;
+  display: block;
+}
+
+.fieldset--platform .fieldset__input:checked ~ .fieldset__radio {
+  box-shadow: 0 0 0 11px $white inset, 0 0 0 20px #D22856 inset;
+}

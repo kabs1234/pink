@@ -1,0 +1,14 @@
+.fieldset--contacts {
+  padding: 32px 0 42px;
+}
+
+.fieldset--contacts .fieldset__item {
+  &:not(:last-child) {
+    margin-bottom: 17px;
+  }
+}
+
+.fieldset--contacts .fieldset__label {
+  margin-left: 23px;
+  margin-bottom: 5px;
+}

@@ -1,0 +1,13 @@
+.fieldset--fullname {
+  margin-bottom: 42px;
+}
+
+.fieldset--fullname .fieldset__label {
+  margin-left: 23px;
+  margin-bottom: 5px;
+}
+.fieldset--fullname .fieldset__item {
+  &:not(:last-child) {
+    margin-bottom: 17px;
+  }
+}

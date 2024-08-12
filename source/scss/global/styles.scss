@@ -1,5 +1,6 @@
 @import "./_variables.scss";
 @import "./global.scss";
+@import "./normalize.scss";
 
 
 //header
@@ -29,6 +30,14 @@
 @import "../blocks/catalog/gallery.scss";
 @import "../blocks/catalog/upload.scss";
 
+// form
+@import "../blocks/form/form.scss";
+@import "../blocks/form/fieldset.scss";
+@import "../blocks/form/fieldset/--fullname.scss";
+@import "../blocks/form/fieldset/--achievements.scss";
+@import "../blocks/form/fieldset/--contacts.scss";
+@import "../blocks/form/fieldset/--platform.scss";
+@import "../blocks/form/fieldset/--emotions.scss";
 
 // footer
 

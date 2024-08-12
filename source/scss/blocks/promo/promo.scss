@@ -1,5 +1,11 @@
 .catalog__promo {
   min-height: 171px;
+  margin-bottom: 44px;
+  padding-top: 29px;
+}
+
+.form-page__promo {
+  min-height: 171px;
   padding-top: 29px;
   margin-bottom: 44px;
 }
@@ -19,7 +25,6 @@
 
 .promo__heading {
   margin: 0;
-  padding: 0 5px;
   font-family: Open Sans;
   font-size: 24px;
   font-weight: 300;
@@ -29,4 +34,13 @@
   &--white-text {
     color: $white;
   }
+
+  &--catalog {
+    padding: 0 5px;
+  }
+
+  &--form {
+    padding: 0 10px;
+  }
+
 }

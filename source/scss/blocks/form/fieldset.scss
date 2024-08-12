@@ -1,0 +1,85 @@
+
+.fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__fieldset {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.fieldset--grey {
+  position: relative;
+  background-color: #F2F2F2;
+}
+
+.fieldset__legend {
+  padding: 0;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+
+  &--red-text {
+    color: #D22856;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--inside {
+    position: absolute;
+    top: 39px;
+    padding: 0 35px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
+
+.fieldset__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.fieldset__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset__label {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+
+  &--red-text {
+    color: #D22856;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}
+
+.fieldset__text-value {
+  &--blue-text {
+    color: #283645;
+  }
+}
+
+.fieldset__input {
+  width: 100%;
+  min-height: 63px;
+  padding-left: 20px;
+  border: 2px solid #E5E5E5;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
