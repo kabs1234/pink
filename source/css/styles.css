@@ -483,7 +483,7 @@ template {
 }
 
 .platforms {
-  padding: 28px 20px 31px;
+  padding: 28px 20px 32px;
   background-color: #1D2631;
 }
 
@@ -506,7 +506,7 @@ template {
   margin-bottom: 17px;
   padding: 0;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   flex-wrap: wrap;
   list-style-type: none;
 }
@@ -542,7 +542,7 @@ template {
   margin-bottom: 30px;
 }
 .information__text:nth-child(2) {
-  margin-bottom: 112px;
+  margin-bottom: 114px;
 }
 
 .advantages {
@@ -562,6 +562,18 @@ template {
   height: 277px;
   margin: 0 auto;
   background: url("../../../img/decorative/screen-friends-mobile.jpg") 8px 35px no-repeat, url("../../../img/decorative/phone-background-mobile.png") 0 0 no-repeat;
+}
+
+.advantages--background::before {
+  content: "";
+  position: absolute;
+  top: -66px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #F2F2F2;
+  transform: skewY(-6.2deg);
+  z-index: -1;
 }
 
 .advantages__termin {
@@ -588,16 +600,13 @@ template {
 }
 
 .main__reviews {
-  margin-bottom: 555px;
-}
-
-.reviews {
+  margin-bottom: 55px;
   padding-top: 41px;
 }
 
 .reviews__list {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 25px;
   padding: 0;
   list-style-type: none;
 }
@@ -639,21 +648,54 @@ template {
 }
 
 .slider__item:not(:last-child) {
-  margin-right: 13px;
+  margin-right: 19px;
 }
 
 .slider__item--active .slider__button {
   background-color: #ffffff;
-  box-shadow: 0 0 0 3px #283645 inset;
+  box-shadow: 0 0 0 3px #283645;
 }
 
 .slider__button {
-  width: 12px;
-  height: 12px;
+  width: 6px;
+  height: 6px;
   padding: 0;
   border: none;
   border-radius: 50%;
   background-color: rgba(40, 54, 69, 0.3);
+}
+
+.main__prices {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 44px;
+}
+
+.prices--grey {
+  background-color: #F2F2F2;
+}
+
+.prices--background::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #F2F2F2;
+  transform: skewY(-3.5deg);
+  z-index: -1;
+}
+
+.prices__wrapper {
+  width: 100%;
+  margin-bottom: 33px;
+  display: flex;
+  overflow-x: scroll;
+  position: relative;
+}
+.prices__wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .prices__list {
@@ -663,61 +705,120 @@ template {
   list-style-type: none;
 }
 
-.prices {
-  position: relative;
-}
-
-.prices__wrapper {
-  position: absolute;
-  width: 320px;
-}
-
 .price {
   width: 280px;
-  border: 2px solid #ffffff;
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
-  overflow: hidden;
 }
 
-.price--active {
-  width: 280px;
+.price--best-seller {
+  position: relative;
 }
-
-.price__wrapper {
-  background-color: #283645;
+.price--best-seller::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -2px;
+  width: 74px;
+  height: 74px;
+  background: url("../../../img/decorative/hit-ribbon.svg") no-repeat;
 }
-
-.price__name {
-  display: block;
-  font-family: Open Sans;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  color: #ffffff;
-  text-align: center;
-}
-
-.price__tag {
-  display: block;
-  font-family: Open Sans;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 30px;
-  color: #ffffff;
-  text-align: center;
-}
-
-.price__characteristics {
+.price--best-seller::after {
+  content: "ХИТ";
+  position: absolute;
+  top: 17px;
+  left: 14px;
+  width: auto;
+  height: auto;
   font-family: Open Sans;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+  color: #ffffff;
+  transform: rotate(-45deg);
+}
+
+.price__wrapper {
+  padding-top: 12px;
+  border: 2px solid #ffffff;
+  border-bottom: none;
+  background-color: #283645;
+  overflow: hidden;
+}
+
+.price__properties {
+  margin: 0;
+}
+.price__properties--text-uppercase {
+  text-transform: uppercase;
+}
+
+.price__name {
+  margin: 0;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+.price__name--white-text {
+  color: #ffffff;
+}
+
+.price__tag {
+  margin: 0;
+  margin-bottom: 26px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+}
+.price__tag--white-text {
+  color: #ffffff;
+}
+
+.price__characteristics {
+  padding: 15px 20px;
+  border: 1px solid #E5E5E5;
+  border-bottom: 2px solid #E5E5E5;
+  border-top: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.price__characteristics--white-background {
+  background-color: #ffffff;
+}
+
+.price__is-included {
+  position: relative;
+}
+
+.price__is-included--yes::before {
+  content: "";
+  position: absolute;
+  width: 31px;
+  height: 21px;
+  top: -43px;
+  right: 20px;
+  background: url("../../../img/decorative/tick-green.svg") no-repeat;
+}
+
+.price__is-included--no::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  top: -47px;
+  right: 21px;
+  background: url("../../../img/decorative/x-figure.svg") no-repeat;
 }
 
 .contacts {
-  padding: 0;
-  padding-bottom: 41px;
+  padding: 43px 0 34px;
 }
 
 .contacts--red-text {

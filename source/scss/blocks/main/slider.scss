@@ -8,18 +8,18 @@
 
 .slider__item {
   &:not(:last-child) {
-    margin-right: 13px;
+    margin-right: 19px;
   }
 }
 
 .slider__item--active .slider__button {
   background-color: $white;
-  box-shadow: 0 0 0 3px #283645 inset;
+  box-shadow: 0 0 0 3px #283645;
 }
 
 .slider__button {
-  width: 12px;
-  height: 12px;
+  width: 6px;
+  height: 6px;
   padding: 0;
   border: none;
   border-radius: 50%;

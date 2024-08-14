@@ -1,51 +1,121 @@
-.prices {
-  position: relative;
-}
-
-.prices__wrapper {
-  position: absolute;
-  width: 320px;
-}
-
 .price {
   width: 280px;
-  border: 2px solid $white;
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
-  overflow: hidden;
 }
 
-.price--active {
-  width: 280px;
+.price--best-seller {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: -2px;
+    width: 74px;
+    height: 74px;
+    background: url('../../../img/decorative/hit-ribbon.svg') no-repeat;
+  }
+
+  &::after {
+    content: "ХИТ";
+    position: absolute;
+    top: 17px;
+    left: 14px;
+    width: auto;
+    height: auto;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    color: $white;
+    transform: rotate(-45deg);
+  }
 }
 
 .price__wrapper {
+  padding-top: 12px;
+  border: 2px solid $white;
+  border-bottom: none;
   background-color: #283645;
+  overflow: hidden;
+}
+
+.price__properties {
+  margin: 0;
+
+  &--text-uppercase {
+    text-transform: uppercase;
+  }
 }
 
 .price__name {
-  display: block;
+  margin: 0;
   font-family: Open Sans;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
-  color: $white;
   text-align: center;
+
+  &--white-text {
+    color: $white;
+  }
 }
 
 .price__tag {
-  display: block;
+  margin: 0;
+  margin-bottom: 26px;
   font-family: Open Sans;
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
-  color: $white;
   text-align: center;
+
+  &--white-text {
+    color: $white;
+  }
 }
 
 .price__characteristics {
-  font-family: Open Sans;
+  padding: 15px 20px;
+  border: 1px solid #E5E5E5;
+  border-bottom: 2px solid #E5E5E5;
+  border-top: none;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
+
+  &--white-background {
+    background-color: $white;
+  }
+}
+
+.price__is-included {
+  position: relative;
+}
+
+.price__is-included--yes {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 21px;
+    top: -43px;
+    right: 20px;
+    background: url('../../../img/decorative/tick-green.svg') no-repeat;
+  }
+}
+
+.price__is-included--no {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: -47px;
+    right: 21px;
+    background: url('../../../img/decorative/x-figure.svg') no-repeat;
+  }
 }

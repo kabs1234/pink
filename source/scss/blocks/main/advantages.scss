@@ -5,6 +5,8 @@
   padding-bottom: 318px;
   background-color: #F2F2F2;
 
+
+
   &::after {
     content: "";
     bottom: 0;
@@ -16,6 +18,20 @@
     margin: 0 auto;
     background: url('../../../img/decorative/screen-friends-mobile.jpg') 8px 35px no-repeat,
     url('../../../img/decorative/phone-background-mobile.png') 0 0 no-repeat;
+  }
+}
+
+.advantages--background {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -66px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #F2F2F2;
+    transform: skewY(-6.2deg);
+    z-index: -1;
   }
 }
 
