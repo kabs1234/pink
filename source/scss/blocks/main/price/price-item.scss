@@ -1,11 +1,11 @@
-.price {
+.price-item {
   width: 280px;
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
 }
 
-.price--best-seller {
+.price-item--best-seller {
   position: relative;
 
   &::before {
@@ -34,7 +34,7 @@
   }
 }
 
-.price__wrapper {
+.price-item__wrapper {
   padding-top: 12px;
   border: 2px solid $white;
   border-bottom: none;
@@ -42,7 +42,7 @@
   overflow: hidden;
 }
 
-.price__properties {
+.price-item__properties {
   margin: 0;
 
   &--text-uppercase {
@@ -50,7 +50,7 @@
   }
 }
 
-.price__name {
+.price-item__name {
   margin: 0;
   font-family: Open Sans;
   font-size: 16px;
@@ -63,7 +63,7 @@
   }
 }
 
-.price__tag {
+.price-item__tag {
   margin: 0;
   margin-bottom: 26px;
   font-family: Open Sans;
@@ -77,7 +77,7 @@
   }
 }
 
-.price__characteristics {
+.price-item__feature {
   padding: 15px 20px;
   border: 1px solid #E5E5E5;
   border-bottom: 2px solid #E5E5E5;
@@ -92,11 +92,11 @@
   }
 }
 
-.price__is-included {
+.price-item__is-included {
   position: relative;
 }
 
-.price__is-included--yes {
+.price-item__is-included--yes {
   &::before {
     content: "";
     position: absolute;
@@ -108,7 +108,7 @@
   }
 }
 
-.price__is-included--no {
+.price-item__is-included--no {
   &::before {
     content: "";
     position: absolute;

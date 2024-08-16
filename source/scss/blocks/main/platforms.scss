@@ -1,6 +1,11 @@
 .platforms {
-  padding: 28px 20px 32px;
-  background-color: #1D2631;
+  &--blue-background {
+    background-color: #1D2631;
+
+    @media (min-width: $tablet) {
+      background-color: transparent;
+    }
+  }
 }
 
 .platforms__download-button {
@@ -14,7 +19,12 @@
   font-weight: 700;
   line-height: 18px;
   color: $white;
+  text-align: center;
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 46px;
+  }
 }
 
 .platforms__list {
@@ -22,9 +32,14 @@
   margin-bottom: 17px;
   padding: 0;
   display: flex;
+  justify-content: center;
   align-items: baseline;
   flex-wrap: wrap;
   list-style-type: none;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
 }
 
 .platforms__item {
@@ -41,4 +56,8 @@
   line-height: 24px;
   color: $white;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+  }
 }

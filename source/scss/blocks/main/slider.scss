@@ -6,6 +6,14 @@
   justify-content: center;
 }
 
+.slider--mobile {
+  display: flex;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
 .slider__item {
   &:not(:last-child) {
     margin-right: 19px;

@@ -2,6 +2,10 @@
   position: relative;
   padding-top: 80px;
   padding-bottom: 44px;
+
+  @media (min-width: $tablet) {
+    padding: 54px 0 69px;
+  }
 }
 
 .prices {
@@ -22,6 +26,13 @@
     transform: skewY(-3.5deg);
     z-index: -1;
   }
+
+  @media (min-width: $tablet) {
+    &::before {
+      top: -22px;
+      transform: skewY(-3.5deg);
+    }
+  }
 }
 
 .prices__wrapper {
@@ -32,6 +43,14 @@
   position: relative;
 
   &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.prices__wrapper--mobile {
+  display: block;
+
+  @media (min-width: $tablet) {
     display: none;
   }
 }

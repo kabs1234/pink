@@ -1,3 +1,10 @@
+.main__promo {
+  @media (min-width: $tablet) {
+    position: relative;
+    min-height: 545px;
+  }
+}
+
 .main-promo {
   &::before {
     content: "";
@@ -8,11 +15,37 @@
     background: $black url('../../../img/decorative/city-background-mobile.jpg') 0 0px no-repeat;
     z-index: -1;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 176px;
+    width: 100%;
+    min-height: 286px;
+    background: url('../../../img/decorative/holding-phone-mobile.png') 0 0 no-repeat,
+    url('../../../img/decorative/phone-screen-mobile.jpg') 104px 33px no-repeat;
+  }
+
+  @media (min-width: $tablet) {
+    &::before {
+      top: -204px;
+      min-height: 729px;
+      background: $black url('../../../img/decorative/promo-index-tablet.jpg') 50% 0px/1200px 729px no-repeat;
+    }
+
+    &::after {
+      top: -20px;
+      min-height: 545px;
+      background: url('../../../img/decorative/holding-phone-tablet.png') 0 0 no-repeat,
+      url('../../../img/decorative/phone-screen-tablet.jpg') 372px 53px no-repeat;
+      z-index: -1;
+    }
+  }
 }
 
 .main-promo__slogan {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 314px;
   padding: 0 10px;
   font-family: Open Sans;
   font-size: 24px;
@@ -20,10 +53,24 @@
   line-height: 28.8px;
   color: $white;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    padding: 0 30px;
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
-.main-promo__app-demo {
-  min-height: 286px;
-  background: url('../../../img/decorative/holding-phone-mobile.png') 0 0 no-repeat,
-  url('../../../img/decorative/phone-screen-mobile.jpg') 104px 33px no-repeat;
+.main-promo__available-platforms {
+  padding: 28px 20px 31px;
+
+  @media (min-width: $tablet) {
+    width: 300px;
+    margin-left: 20px;
+    padding: 0;
+  }
 }

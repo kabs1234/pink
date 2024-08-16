@@ -1,0 +1,85 @@
+.main__effect {
+  position: relative;
+  width: 620px;
+  min-height: 330px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding-top: 94px;
+}
+
+.effect {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.effect--timer-background {
+  &::before {
+    content: "24";
+    position: absolute;
+    top: 109px;
+    left: 18px;
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Open Sans;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 163px;
+    color: #D22856;
+    box-shadow: 0px 0px 0 15px #D22856 inset;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 52px;
+    left: 0px;
+    width: 238px;
+    height: 276px;
+    background: url('../../../img/decorative/timer.svg') no-repeat;
+    z-index: -1;
+  }
+}
+
+.effect__content {
+  margin-left: 310px;
+}
+
+.effect__heading {
+  margin: 0;
+  margin-bottom: 11px;
+  font-family: Open Sans;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+
+  &--black-text {
+    color: $black;
+  }
+}
+
+.effect__text {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.effect__link {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+
+  &--red-text {
+    color: #D22856;
+  }
+}

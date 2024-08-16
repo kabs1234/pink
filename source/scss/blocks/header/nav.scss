@@ -10,10 +10,11 @@
   position: absolute;
   top: 73px;
   right: 0;
-  width: 320px;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  z-index: 1;
 }
 
 .nav__item {
@@ -23,8 +24,10 @@
 }
 
 .nav__link {
-  padding: 15.5px;
-  display: block;
+  min-height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Open Sans;
   font-size: 18px;
   font-weight: 700;

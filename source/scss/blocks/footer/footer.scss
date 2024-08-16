@@ -1,10 +1,27 @@
-.footer {
+.page-body__footer {
   margin-top: auto;
   padding: 40px 0;
+
+  @media (min-width: $tablet) {
+    width: 620px;
+    margin: 0 auto;
+    padding: 19px 0;
+  }
+}
+
+.footer {
+  @media (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .footer__logo {
   margin: 0 auto 41px;
   display: block;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }

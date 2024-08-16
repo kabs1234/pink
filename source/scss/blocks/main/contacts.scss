@@ -1,5 +1,55 @@
+.main__contacts {
+  @media (min-width: $tablet) {
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
 .contacts {
   padding: 43px 0 34px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 22px;
+  }
+}
+
+.contacts__wrapper {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'phone email'
+                         'address address';
+    column-gap: 20px;
+    row-gap: 22px;
+  }
+}
+
+.contacts__container {
+  margin: 0;
+}
+
+.contacts__container--phone {
+  @media (min-width: $tablet) {
+    grid-area: phone;
+  }
+}
+
+.contacts__container--email {
+  @media (min-width: $tablet) {
+    grid-area: email;
+  }
+}
+
+.contacts__container--address {
+  @media (min-width: $tablet) {
+    grid-area: address;
+  }
+}
+
+.contacts__container--address .contacts__text {
+  @media (min-width: $tablet) {
+    margin-bottom: 4px;
+  }
 }
 
 .contacts--red-text {
@@ -8,13 +58,19 @@
 
 .contacts__description {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
   font-family: Open Sans;
   font-size: 24px;
   font-weight: 300;
   line-height: 28.8px;
   color: #283645;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 0 40px;
+    font-size: 40px;
+    line-height: 54.47px;
+  }
 }
 
 .contacts__text {
@@ -52,6 +108,7 @@
 .contacts__address {
   margin: 0;
   padding: 0 12px;
+  display: block;
   font-family: Open Sans;
   font-size: 24px;
   font-weight: 300;

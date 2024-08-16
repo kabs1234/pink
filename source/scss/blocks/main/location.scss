@@ -12,10 +12,21 @@
     margin: 0 auto;
     background: url('../../../img/decorative/triangle-background.svg') 50% -96px no-repeat;
   }
+
+  @media (min-width: $tablet) {
+    &::before {
+      top: -1px;
+      background: url('../../../img/decorative/triangle-background.svg') 50% 0/auto 68px no-repeat;
+    }
+  }
 }
 
 .location__map {
   width: 100%;
   height: 200px;
   display: block;
+
+  @media (min-width: $tablet) {
+    height: 374px;
+  }
 }

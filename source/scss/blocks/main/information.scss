@@ -1,21 +1,87 @@
 .main__information {
   position: relative;
-  margin-top: 41px;
+  padding-top: 41px;
+
+  @media (min-width: $tablet) {
+    min-height: 706px;
+    padding-top: 27px;
+  }
 }
 
-.information__text {
+.information--skew-background {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -66px;
+    left: 0;
+    width: 100vw;
+    height: 820px;
+    background: #F2F2F2;
+    transform: skewY(-6.2deg);
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet) {
+    &::before {
+      content: "";
+      top: 245px;
+      height: 433px;
+      background: #F2F2F2;
+      transform-origin: top;
+      transform: skewY(-4.8deg);
+    }
+  }
+}
+
+.information--phone-decorative {
+  &::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    width: 157px;
+    height: 277px;
+    margin: 0 auto;
+    background: url('../../../img/decorative/screen-friends-mobile.jpg') 8px 35px no-repeat,
+    url('../../../img/decorative/phone-background-mobile.png') 0 0 no-repeat;
+  }
+
+  @media (min-width: $tablet) {
+    &::after {
+      top: 224px;
+      left: 20px;
+      margin: 0;
+      width: 268px;
+      height: 481px;
+      background: url('../../../img/decorative/screen-friends-tablet.jpg') 13px 59px no-repeat,
+      url('../../../img/decorative/phone-background-tablet.png') 0 0 no-repeat;
+    }
+  }
+}
+
+.information__slogan {
   margin: 0;
+  margin-bottom: 115px;
   font-family: Open Sans;
   font-size: 24px;
   font-weight: 300;
   line-height: 28.8px;
   text-align: center;
 
-  &:first-child {
-    margin-bottom: 30px;
+  @media (min-width: $tablet) {
+    margin-bottom: 105px;
+    font-size: 40px;
+    line-height: 54.47px;
   }
+}
 
-  &:nth-child(2) {
-    margin-bottom: 114px;
+.information__text {
+  margin-top: 30px;
+  display: block;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0 40px;
   }
 }
