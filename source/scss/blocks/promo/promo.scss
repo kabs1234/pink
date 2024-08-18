@@ -1,7 +1,13 @@
 .catalog__promo {
   min-height: 171px;
-  margin-bottom: 44px;
-  padding-top: 29px;
+  margin-bottom: 37px;
+  padding-top: 22px;
+
+  @media (min-width: $tablet) {
+    min-height: 330px;
+    margin-bottom: 91px;
+    padding-top: 66px;
+  }
 }
 
 .form-page__promo {
@@ -16,10 +22,17 @@
     position: absolute;
     top: 0;
     width: 100%;
-    min-height: 237px;
-    background: $black url('../../../img/decorative/promo-tablet.png') 50% 0px/660px 237px no-repeat;
+    height: 237px;
+    background: $black url('../../../img/decorative/promo-tablet.png') 50% 0px/660px no-repeat;
     background-size: auto;
     z-index: -1;
+  }
+
+  @media (min-width: $tablet) {
+    &::before {
+      height: 440px;
+      background: $black url('../../../img/decorative/promo-desktop.jpg') 50% 0px/1200px no-repeat;
+    }
   }
 }
 
@@ -43,4 +56,11 @@
     padding: 0 10px;
   }
 
+  @media (min-width: $tablet) {
+    font-family: Open Sans;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 68.09px;
+    text-align: center;
+  }
 }
