@@ -1,10 +1,13 @@
 .main__information {
   position: relative;
   padding-top: 41px;
+  padding-bottom: 291px;
 
   @media (min-width: $tablet) {
     min-height: 706px;
-    padding-top: 27px;
+    margin-bottom: 96px;
+    padding-top: 47px;
+    padding-bottom: 0;
   }
 }
 
@@ -12,10 +15,10 @@
   &::before {
     content: "";
     position: absolute;
-    top: -66px;
+    top: 232px;
     left: 0;
     width: 100vw;
-    height: 820px;
+    height: 320px;
     background: #F2F2F2;
     transform: skewY(-6.2deg);
     z-index: -1;
@@ -24,11 +27,10 @@
   @media (min-width: $tablet) {
     &::before {
       content: "";
-      top: 245px;
+      top: 265px;
       height: 433px;
       background: #F2F2F2;
-      transform-origin: top;
-      transform: skewY(-4.8deg);
+      transform: skewY(-4.7deg);
     }
   }
 }
@@ -49,7 +51,7 @@
 
   @media (min-width: $tablet) {
     &::after {
-      top: 224px;
+      top: 244px;
       left: 20px;
       margin: 0;
       width: 268px;
@@ -73,6 +75,29 @@
     margin-bottom: 105px;
     font-size: 40px;
     line-height: 54.47px;
+  }
+}
+
+.information__wrapper {
+  position: relative;
+  min-height: 410px;
+}
+
+.information__wrapper--grey-background {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 701px;
+    background-color: #F2F2F2;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet) {
+    &::before {
+      height: 410px;
+    }
   }
 }
 

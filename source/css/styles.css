@@ -386,8 +386,15 @@ template {
   }
 }
 
-.header__logo {
+.header__link {
   margin-right: auto;
+}
+
+@media (min-width: 660px) {
+  .header__logo {
+    width: 145px;
+    height: 40px;
+  }
 }
 
 .header__button {
@@ -469,7 +476,7 @@ template {
 @media (min-width: 660px) {
   .main__promo {
     position: relative;
-    min-height: 545px;
+    min-height: 525px;
   }
 }
 
@@ -479,7 +486,7 @@ template {
   top: 0;
   width: 100%;
   min-height: 462px;
-  background: #000000 url("../../../img/decorative/city-background-mobile.jpg") 0 0px no-repeat;
+  background: #000000 url("../../../img/decorative/promo-index-mobile.jpg") 0 0px no-repeat;
   z-index: -1;
 }
 .main-promo::after {
@@ -506,7 +513,7 @@ template {
 
 .main-promo__slogan {
   margin: 0;
-  margin-bottom: 314px;
+  margin-bottom: 313px;
   padding: 0 10px;
   font-family: Open Sans;
   font-size: 24px;
@@ -580,6 +587,7 @@ template {
 @media (min-width: 660px) {
   .platforms__list {
     margin-bottom: 30px;
+    align-items: center;
   }
 }
 
@@ -605,21 +613,24 @@ template {
 .main__information {
   position: relative;
   padding-top: 41px;
+  padding-bottom: 291px;
 }
 @media (min-width: 660px) {
   .main__information {
     min-height: 706px;
-    padding-top: 27px;
+    margin-bottom: 96px;
+    padding-top: 47px;
+    padding-bottom: 0;
   }
 }
 
 .information--skew-background::before {
   content: "";
   position: absolute;
-  top: -66px;
+  top: 232px;
   left: 0;
   width: 100vw;
-  height: 820px;
+  height: 320px;
   background: #F2F2F2;
   transform: skewY(-6.2deg);
   z-index: -1;
@@ -627,11 +638,10 @@ template {
 @media (min-width: 660px) {
   .information--skew-background::before {
     content: "";
-    top: 245px;
+    top: 265px;
     height: 433px;
     background: #F2F2F2;
-    transform-origin: top;
-    transform: skewY(-4.8deg);
+    transform: skewY(-4.7deg);
   }
 }
 
@@ -648,7 +658,7 @@ template {
 }
 @media (min-width: 660px) {
   .information--phone-decorative::after {
-    top: 224px;
+    top: 244px;
     left: 20px;
     margin: 0;
     width: 268px;
@@ -671,6 +681,26 @@ template {
     margin-bottom: 105px;
     font-size: 40px;
     line-height: 54.47px;
+  }
+}
+
+.information__wrapper {
+  position: relative;
+  min-height: 410px;
+}
+
+.information__wrapper--grey-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 701px;
+  background-color: #F2F2F2;
+  z-index: -1;
+}
+@media (min-width: 660px) {
+  .information__wrapper--grey-background::before {
+    height: 410px;
   }
 }
 
@@ -747,10 +777,8 @@ template {
 .main__effect {
   position: relative;
   width: 620px;
-  min-height: 330px;
   margin: 0 auto;
-  margin-bottom: 100px;
-  padding-top: 94px;
+  margin-bottom: 120px;
 }
 
 .effect {
@@ -765,7 +793,7 @@ template {
 .effect--timer-background::before {
   content: "24";
   position: absolute;
-  top: 109px;
+  top: 13px;
   left: 18px;
   width: 202px;
   height: 202px;
@@ -783,7 +811,7 @@ template {
 .effect--timer-background::after {
   content: "";
   position: absolute;
-  top: 52px;
+  top: -42px;
   left: 0px;
   width: 238px;
   height: 276px;
@@ -817,10 +845,12 @@ template {
 }
 
 .effect__link {
+  border-bottom: 1px solid #D22856;
   font-family: Open Sans;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+  text-decoration: none;
 }
 .effect__link--red-text {
   color: #D22856;
@@ -832,6 +862,8 @@ template {
 }
 @media (min-width: 660px) {
   .main__reviews {
+    width: 620px;
+    margin: 0 auto 55px;
     padding-top: 0;
   }
 }
@@ -844,7 +876,7 @@ template {
 }
 @media (min-width: 660px) {
   .reviews__list {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 }
 
@@ -892,6 +924,7 @@ template {
 @media (min-width: 660px) {
   .reviews__text {
     margin-bottom: 35px;
+    padding: 0;
     order: 0;
     font-size: 18px;
     line-height: 30px;
@@ -957,7 +990,7 @@ template {
 }
 @media (min-width: 660px) {
   .main__prices {
-    padding: 54px 0 69px;
+    padding: 54px 0 66px;
   }
 }
 
@@ -1143,7 +1176,7 @@ template {
 .price-table__rate {
   width: 152px;
   min-height: 75px;
-  padding: 13px 35px 7px;
+  padding: 13px 38px 7px;
 }
 .price-table__rate--blue-background {
   background-color: #283645;
@@ -1256,8 +1289,8 @@ template {
 }
 
 @media (min-width: 660px) {
-  .contacts__container--address .contacts__text {
-    margin-bottom: 4px;
+  .contacts__container .contacts__text {
+    margin-bottom: 5px;
   }
 }
 
@@ -1267,7 +1300,7 @@ template {
 
 .contacts__description {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   font-family: Open Sans;
   font-size: 24px;
   font-weight: 300;
@@ -1277,6 +1310,7 @@ template {
 }
 @media (min-width: 660px) {
   .contacts__description {
+    margin-bottom: 32px;
     padding: 0 40px;
     font-size: 40px;
     line-height: 54.47px;
@@ -1355,7 +1389,7 @@ template {
 }
 @media (min-width: 660px) {
   .location__map {
-    height: 374px;
+    height: 371px;
   }
 }
 
@@ -1926,14 +1960,12 @@ template {
   .page-body__footer {
     width: 620px;
     margin: 0 auto;
-    padding: 19px 0;
   }
 }
 
 @media (min-width: 660px) {
   .footer {
     display: flex;
-    align-items: center;
   }
 }
 
@@ -1945,6 +1977,7 @@ template {
 @media (min-width: 660px) {
   .footer__logo {
     margin: 0;
+    margin-right: 79px;
   }
 }
 
@@ -1955,6 +1988,12 @@ template {
   display: flex;
   justify-content: center;
   list-style-type: none;
+}
+@media (min-width: 660px) {
+  .socials {
+    margin-bottom: 0px;
+    margin-right: 94px;
+  }
 }
 
 .socials__item:not(:last-child) {

@@ -5,6 +5,11 @@
   display: flex;
   justify-content: center;
   list-style-type: none;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0px;
+    margin-right: 94px;
+  }
 }
 
 .socials__item {

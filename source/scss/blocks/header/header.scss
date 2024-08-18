@@ -28,8 +28,15 @@
   }
 }
 
-.header__logo {
+.header__link {
   margin-right: auto;
+}
+
+.header__logo {
+  @media (min-width: $tablet) {
+    width: 145px;
+    height: 40px;
+  }
 }
 
 .header__button {

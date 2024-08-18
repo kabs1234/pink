@@ -46,9 +46,9 @@
   }
 }
 
-.contacts__container--address .contacts__text {
+.contacts__container .contacts__text {
   @media (min-width: $tablet) {
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
 }
 
@@ -58,7 +58,7 @@
 
 .contacts__description {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
   font-family: Open Sans;
   font-size: 24px;
   font-weight: 300;
@@ -67,6 +67,7 @@
   text-align: center;
 
   @media (min-width: $tablet) {
+    margin-bottom: 32px;
     padding: 0 40px;
     font-size: 40px;
     line-height: 54.47px;

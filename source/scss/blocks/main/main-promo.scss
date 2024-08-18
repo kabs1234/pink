@@ -1,7 +1,7 @@
 .main__promo {
   @media (min-width: $tablet) {
     position: relative;
-    min-height: 545px;
+    min-height: 525px;
   }
 }
 
@@ -12,7 +12,7 @@
     top: 0;
     width: 100%;
     min-height: 462px;
-    background: $black url('../../../img/decorative/city-background-mobile.jpg') 0 0px no-repeat;
+    background: $black url('../../../img/decorative/promo-index-mobile.jpg') 0 0px no-repeat;
     z-index: -1;
   }
 
@@ -45,7 +45,7 @@
 
 .main-promo__slogan {
   margin: 0;
-  margin-bottom: 314px;
+  margin-bottom: 313px;
   padding: 0 10px;
   font-family: Open Sans;
   font-size: 24px;
