@@ -452,6 +452,11 @@ template {
   list-style-type: none;
   z-index: 1;
 }
+@media (min-width: 660px) {
+  .nav__list {
+    top: 110px;
+  }
+}
 
 .nav__item {
   background-color: #283645;
