@@ -1413,8 +1413,8 @@ template {
 
 .form-page__promo {
   min-height: 171px;
-  padding-top: 29px;
-  margin-bottom: 44px;
+  padding-top: 23px;
+  margin-bottom: 37px;
 }
 
 .promo::before {
@@ -2223,6 +2223,77 @@ template {
 .fieldset--emotions .fieldset__input {
   padding-top: 14px;
   min-height: 201px;
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  display: none;
+}
+.modal--active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__container {
+  width: 320px;
+  height: 380px;
+}
+.modal__container--white-background {
+  background-color: #ffffff;
+}
+
+.modal__heading {
+  margin: 11px 0 25px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+.modal__heading--black-text {
+  color: #000000;
+}
+
+.modal__description {
+  margin: 0;
+  padding: 0 20px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+.modal__description--blue-text {
+  color: #283645;
+}
+
+.modal__button-wrapper {
+  width: 100%;
+  min-height: 163px;
+}
+.modal__button-wrapper--grey-background {
+  background-color: #F2F2F2;
+}
+
+.modal__button {
+  width: 280px;
+  min-height: 63px;
+  margin: auto;
+  padding: 0;
+  border: none;
+  display: block;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+}
+.modal__button--green-background {
+  background-color: #2AAB6D;
 }
 
 .page-body__footer {
