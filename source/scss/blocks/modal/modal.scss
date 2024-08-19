@@ -33,6 +33,11 @@
   &--black-text {
     color: $black;
   }
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .modal__description {
@@ -45,6 +50,10 @@
 
   &--blue-text {
     color: #283645;
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
   }
 }
 
@@ -77,5 +86,9 @@
 
   &--uppercase {
     text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet) {
+    width: 300px;
   }
 }

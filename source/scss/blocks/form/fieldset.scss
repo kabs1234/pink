@@ -1,4 +1,3 @@
-
 .fieldset {
   margin: 0;
   padding: 0;
@@ -8,6 +7,10 @@
 .form__fieldset {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 620px;
+  }
 }
 
 .fieldset--grey {
@@ -38,6 +41,12 @@
     left: 0;
     right: 0;
     margin: 0 auto;
+  }
+
+  @media (min-width: $tablet) {
+    &--inside {
+      position: static;
+    }
   }
 }
 

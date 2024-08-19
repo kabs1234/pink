@@ -1,11 +1,37 @@
 .fieldset--platform {
   width: 100%;
   padding: 42px 0 34px;
+
+  @media (min-width: $tablet) {
+    width: 620px;
+    margin: 0 auto 59px;
+    padding: 51px 0 46px;
+    border: 2px solid #E5E5E5;
+    order: 2;
+  }
+}
+
+.fieldset--platform.fieldset--grey {
+  @media (min-width: $tablet) {
+    background-color: transparent;
+  }
+}
+
+.fieldset--platform .fieldset__legend {
+  @media (min-width: $tablet) {
+    padding: 0 25px;
+  }
 }
 
 .fieldset--platform .fieldset__list {
   width: 280px;
   margin: 75px auto 0;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    margin: 0;
+    margin-left: 58px;
+  }
 }
 
 .fieldset--platform .fieldset__item {
@@ -46,6 +72,10 @@
   border-radius: 50%;
   background: #FFFFFF;
   display: block;
+
+  @media (min-width: $tablet) {
+    margin-right: 20px;
+  }
 }
 
 .fieldset--platform .fieldset__input:checked ~ .fieldset__radio {

@@ -1,0 +1,19 @@
+.form-page__promo {
+  min-height: 171px;
+  padding-top: 23px;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet) {
+    min-height: 330px;
+    padding-top: 66px;
+    margin-bottom: 91px;
+  }
+}
+
+.promo__heading--form {
+  padding: 0 10px;
+
+  @media (min-width: $tablet) {
+    padding: 0 15px;
+  }
+}

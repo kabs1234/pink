@@ -1,14 +1,28 @@
 .modal--failure .modal__container {
   width: 320px;
   min-height: 289px;
+
+  @media (min-width: $tablet) {
+    width: 460px;
+    min-height: 363px;
+  }
 }
 
 .modal--failure .modal__heading {
   margin: 38px 0 25px;
+
+  @media (min-width: $tablet) {
+    padding: 0 105px;
+  }
 }
 
 .modal--failure .modal__description {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 32px;
+    padding: 0 70px;
+  }
 }
 
 .modal--failure .modal__button-wrapper--grey-background {

@@ -1,13 +1,34 @@
 .fieldset--emotions {
   width: 280px;
   margin: 38px auto;
+
+  @media (min-width: $tablet) {
+    width: 620px;
+    margin: 0 auto 66px;
+    padding: 36px 0 41px;
+    border: 2px solid #E5E5E5;
+    display: flex;
+    justify-content: center;
+    order: 5;
+  }
 }
 
 .fieldset--emotions .fieldset__legend {
   margin-bottom: 16px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0 38px;
+  }
 }
 
 .fieldset--emotions .fieldset__input {
   padding-top: 14px;
   min-height: 201px;
+  resize: none;
+
+  @media (min-width: $tablet) {
+    width: 500px;
+    min-height: 193px;
+  }
 }

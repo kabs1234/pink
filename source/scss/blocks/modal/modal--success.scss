@@ -1,15 +1,30 @@
 .modal--success .modal__container {
   width: 320px;
   min-height: 380px;
+
+  @media (min-width: $tablet) {
+    width: 460px;
+    min-height: 432px;
+  }
 }
 
 .modal--success .modal__heading {
   margin: 38px 0 25px;
+
+  @media (min-width: $tablet) {
+    margin: 43px 0 22px;
+    padding: 0 35px;
+  }
 }
 
 .modal--success .modal__description {
   margin-bottom: 34px;
   padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 29px;
+    padding: 0 65px;
+  }
 }
 
 .modal--success .modal__button-wrapper {
