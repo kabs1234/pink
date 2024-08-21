@@ -8,8 +8,24 @@
     margin-bottom: 91px;
     padding-top: 66px;
   }
+
+  @media (min-width: $desktop) {
+    min-height: 284px;
+    margin-bottom: 91px;
+    padding-top: 58px;
+  }
 }
 
 .promo__heading--catalog {
   padding: 0 5px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    br {
+      display: inline;
+    }
+  }
 }

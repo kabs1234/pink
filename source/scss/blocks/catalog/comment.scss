@@ -1,5 +1,6 @@
 .gallery__comment {
   width: 280px;
+  min-height: 121px;
   margin: 0 auto;
   padding: 17.5px 17px;
 
@@ -7,6 +8,11 @@
     width: 300px;
     min-height: 155px;
     padding: 23px 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 23px 27px;
+    padding-right: 30px;
   }
 }
 
@@ -95,6 +101,11 @@
     padding: 23px 30px 25px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop) {
+    width: 940px;
+    padding: 23px 30px 25px 27px;;
   }
 }
 

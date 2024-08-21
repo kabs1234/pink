@@ -16,6 +16,13 @@
       background: $black url('../../../img/decorative/promo-desktop.jpg') 50% 0px/1200px no-repeat;
     }
   }
+
+  @media (min-width: $desktop) {
+    &::before {
+      height: 394px;
+      background: $black url('../../../img/decorative/promo-desktop.jpg') 50% 40%/2560px no-repeat;
+    }
+  }
 }
 
 .promo__heading {

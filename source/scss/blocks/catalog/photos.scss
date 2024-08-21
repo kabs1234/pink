@@ -1,5 +1,13 @@
 .catalog__photos {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 58px;
+  }
 }
 
 .photos__text {
@@ -16,5 +24,10 @@
     margin-bottom: 77px;
     padding: 0 50px;
     font-size: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 89px;
+    padding: 0 285px;
   }
 }

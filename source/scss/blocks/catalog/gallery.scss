@@ -7,6 +7,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 54px;
   }
 }
 
@@ -17,6 +23,10 @@
   @media (min-width: $tablet) {
     width: 620px;
   }
+
+  @media (min-width: $desktop) {
+    width: 940px;
+  }
 }
 
 .gallery__image {
@@ -26,5 +36,11 @@
 .gallery__item {
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
   }
 }

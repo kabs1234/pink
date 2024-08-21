@@ -38,6 +38,15 @@
       top: 57px;
     }
   }
+
+  @media (min-width: $desktop) {
+    width: 1200px;
+
+    &::before {
+      top: 54px;
+      right: 130px;
+    }
+  }
 }
 
 .panorama__image {
