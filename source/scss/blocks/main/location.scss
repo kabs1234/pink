@@ -19,6 +19,13 @@
       background: url('../../../img/decorative/triangle-background.svg') 50% 0/auto 68px no-repeat;
     }
   }
+
+  @media (min-width: $desktop) {
+    &::before {
+      top: -18px;
+      background: url('../../../img/decorative/triangle-background.svg') 50% 0/auto 123px no-repeat;
+    }
+  }
 }
 
 .location__map {
@@ -28,5 +35,9 @@
 
   @media (min-width: $tablet) {
     height: 371px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 502px;
   }
 }

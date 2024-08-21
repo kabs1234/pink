@@ -4,6 +4,10 @@
   &--opened {
     display: block;
   }
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
 }
 
 .nav__list {
@@ -19,12 +23,25 @@
   @media (min-width: $tablet) {
     top: 110px;
   }
+  @media (min-width: $desktop) {
+    position: static;
+    display: flex;
+  }
 }
 
 .nav__item {
   background-color: $prime-color;
   text-align: center;
   box-shadow: 0px -1px 0px 0px #000000, 0px 1px 0px 0px #FFFFFF26 inset;
+
+  @media (min-width: $desktop) {
+    background-color: transparent;
+    box-shadow: none;
+
+    &:not(:last-child) {
+      margin-right: 79px;
+    }
+  }
 }
 
 .nav__link {
@@ -39,4 +56,10 @@
   color: $white;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $desktop) {
+    text-transform: none;
+    line-height: 18px;
+    font-weight: 400;
+  }
 }

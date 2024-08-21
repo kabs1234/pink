@@ -10,11 +10,21 @@
     margin-bottom: 0px;
     margin-right: 94px;
   }
+
+  @media (min-width: $desktop) {
+    margin-right: 233px;
+  }
 }
 
 .socials__item {
   &:not(:last-child) {
     margin-right: 14px;
+  }
+
+  @media (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 11px;
+    }
   }
 }
 

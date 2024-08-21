@@ -3,6 +3,10 @@
     position: relative;
     min-height: 525px;
   }
+
+  @media (min-width: $desktop) {
+    min-height: 645px;
+  }
 }
 
 .main-promo {
@@ -12,7 +16,7 @@
     top: 0;
     width: 100%;
     min-height: 462px;
-    background: $black url('../../../img/decorative/promo-index-mobile.jpg') 0 0px no-repeat;
+    background: $black url('../../../img/decorative/promo-index-tablet.jpg') 50% 50%/ 660px 462px no-repeat;
     z-index: -1;
   }
 
@@ -20,7 +24,8 @@
     content: "";
     position: absolute;
     top: 176px;
-    width: 100%;
+    left: calc(50vw - 160px);
+    width: 320px;
     min-height: 286px;
     background: url('../../../img/decorative/holding-phone-mobile.png') 0 0 no-repeat,
     url('../../../img/decorative/phone-screen-mobile.jpg') 104px 33px no-repeat;
@@ -34,12 +39,43 @@
     }
 
     &::after {
+      width: 660px;
       top: -20px;
+      left: calc(50vw - 330px);
       min-height: 545px;
       background: url('../../../img/decorative/holding-phone-tablet.png') 0 0 no-repeat,
       url('../../../img/decorative/phone-screen-tablet.jpg') 372px 53px no-repeat;
       z-index: -1;
     }
+  }
+
+  @media (min-width: $desktop) {
+    &::before {
+      top: -210px;
+      min-height: 855px;
+      background: $black url('../../../img/decorative/promo-index-desktop.jpg') 50% 0px/2560px 855px no-repeat;
+    }
+
+    &::after {
+      top: 0px;
+      width: 1050px;
+      left: calc(50vw - 462px);
+      min-height: 669px;
+      background: url('../../../img/decorative/holding-phone-desktop.png') no-repeat,
+      url('../../../img/decorative/phone-screen-desktop.jpg') 571px 65px no-repeat;
+      z-index: -1;
+    }
+  }
+}
+
+.main-promo__content {
+  @media (min-width: $tablet) {
+    width: 300px;
+    margin-left: calc(50vw - 310px);
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: calc(50vw - 480px);
   }
 }
 
@@ -55,22 +91,33 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    width: 300px;
     margin-top: 20px;
     margin-bottom: 30px;
-    margin-left: 20px;
     padding: 0 30px;
     font-size: 40px;
     line-height: 48px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    margin-bottom: 37px;
+    font-size: 50px;
+    line-height: 68.09px;
   }
 }
 
 .main-promo__available-platforms {
-  padding: 28px 20px 31px;
+  padding: 29px 20px 31px;
 
   @media (min-width: $tablet) {
-    width: 300px;
-    margin-left: 20px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
   }
 }

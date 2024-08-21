@@ -6,6 +6,12 @@
   justify-content: center;
 }
 
+.reviews__slider {
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
 .slider--mobile {
   display: flex;
 

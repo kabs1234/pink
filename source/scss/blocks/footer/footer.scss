@@ -6,6 +6,11 @@
     width: 620px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop) {
+    width: 940px;
+    padding: 75px 0;
+  }
 }
 
 .footer {
@@ -22,5 +27,9 @@
   @media (min-width: $tablet) {
     margin: 0;
     margin-right: 79px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 242px;
   }
 }

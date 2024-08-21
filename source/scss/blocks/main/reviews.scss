@@ -1,11 +1,54 @@
 .main__reviews {
+  position: relative;
   margin-bottom: 55px;
-  padding-top: 41px;
 
   @media (min-width: $tablet) {
     width: 620px;
     margin: 0 auto 55px;
     padding-top: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 940px;
+    margin: 0 auto 55px;
+    padding-top: 114px;
+  }
+}
+
+.reviews--quotes {
+  @media (min-width: $desktop) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 79px;
+      height: 63px;
+      margin: 0 auto;
+      background: url('../../../img/decorative/quotes.svg') no-repeat;
+    }
+  }
+}
+
+.reviews__swipe-button {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+    position: absolute;
+    top: 141px;
+    width: 30px;
+    height: 50px;
+    border: none;
+    background: url('../../../img/decorative/arrow.svg') no-repeat;
+    opacity: 0.3;
+
+    &--next {
+      top: 133px;
+      right: 0;
+      transform: rotate(180deg);
+    }
   }
 }
 
@@ -16,7 +59,12 @@
   list-style-type: none;
 
   @media (min-width: $tablet) {
-    margin-bottom: 32px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    position: relative;
+    margin-bottom: 134px;
   }
 }
 
@@ -31,6 +79,13 @@
     &--active {
       display: flex;
       flex-direction: column;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &--active {
+      width: 690px;
+      margin: 0 auto;
     }
   }
 }
@@ -49,6 +104,10 @@
     margin: 0;
     order: 1;
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
   }
 }
 
@@ -85,5 +144,9 @@
 
   @media (min-width: $tablet) {
     display: block;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
   }
 }

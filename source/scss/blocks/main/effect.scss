@@ -3,6 +3,18 @@
   width: 620px;
   margin: 0 auto;
   margin-bottom: 120px;
+
+  @media (min-width: $tablet) {
+    padding-top: 65px;
+    margin-bottom: 123px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    margin-bottom: 72px;
+    padding-top: 65px;
+    padding-bottom: 111px;
+  }
 }
 
 .effect {
@@ -17,7 +29,7 @@
   &::before {
     content: "24";
     position: absolute;
-    top: 13px;
+    top: 80px;
     left: 18px;
     width: 202px;
     height: 202px;
@@ -36,17 +48,51 @@
   &::after {
     content: "";
     position: absolute;
-    top: -42px;
+    top: 24px;
     left: 0px;
     width: 238px;
     height: 276px;
     background: url('../../../img/decorative/timer.svg') no-repeat;
     z-index: -1;
   }
+
+  @media (min-width: $desktop) {
+    &::before {
+      top: 41px;
+      left: calc(50vw - 454px);
+      width: 252px;
+      height: 252px;
+      font-size: 120px;
+      line-height: 163px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -29px;
+      left: calc(50vw - 477px);
+      width: 298px;
+      height: 345px;
+      background: url('../../../img/decorative/timer-desktop.svg') no-repeat;
+    }
+  }
+}
+
+.effect--grey-background {
+  @media (min-width: $desktop) {
+    background-color: #F2F2F2;
+    z-index: 0;
+  }
 }
 
 .effect__content {
   margin-left: 310px;
+
+  @media (min-width: $desktop) {
+    width: 530px;
+    margin: 0;
+    margin-left: calc(50vw - 108px);
+  }
 }
 
 .effect__heading {
@@ -60,6 +106,15 @@
   &--black-text {
     color: $black;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 26px;
+    line-height: 30px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .effect__text {
@@ -69,6 +124,16 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 30px;
+
+    br {
+      display: none;
+    }
+  }
 }
 
 .effect__link {
@@ -81,5 +146,10 @@
 
   &--red-text {
     color: #D22856;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

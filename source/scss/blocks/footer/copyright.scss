@@ -16,4 +16,8 @@
   &--blue {
     color: #283645;
   }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+  }
 }

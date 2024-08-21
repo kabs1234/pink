@@ -9,7 +9,9 @@
 }
 
 .platforms__download-button {
-  margin-bottom: 32px;
+  width: 280px;
+  min-height: 55px;
+  margin: 0 auto 32px;
   padding: 15.5px 36px;
   border: 3px solid #FFFFFF;
   border-radius: 29px;
@@ -23,7 +25,14 @@
   text-decoration: none;
 
   @media (min-width: $tablet) {
+    width: 300px;
     margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 67px;
+    padding: 16.6px 0;
+    font-size: 21px;
   }
 }
 
@@ -40,6 +49,11 @@
   @media (min-width: $tablet) {
     margin-bottom: 30px;
     align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    margin-bottom: 48px;
   }
 }
 
