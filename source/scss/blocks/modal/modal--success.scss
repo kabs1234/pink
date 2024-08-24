@@ -6,6 +6,11 @@
     width: 460px;
     min-height: 432px;
   }
+
+  @media (min-width: $desktop) {
+    width: 780px;
+    min-height: 377px;
+  }
 }
 
 .modal--success .modal__heading {
@@ -14,6 +19,11 @@
   @media (min-width: $tablet) {
     margin: 43px 0 22px;
     padding: 0 35px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 40px 0 23px;
+    padding: 0;
   }
 }
 
@@ -25,10 +35,22 @@
     margin-bottom: 29px;
     padding: 0 65px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 39px;
+    padding: 0 155px;
+  }
 }
 
 .modal--success .modal__button-wrapper {
   width: 100%;
   min-height: 163px;
   display: flex;
+}
+
+.modal--success .modal__button {
+  @media (min-width: $desktop) {
+    width: 456px;
+    height: 59px;
+  }
 }

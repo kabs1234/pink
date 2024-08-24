@@ -26,7 +26,6 @@
 // catalog
 @import "../blocks/promo/promo.scss";
 @import "../blocks/promo/catalog-promo.scss";
-@import "../blocks/promo/form-promo.scss";
 @import "../blocks/catalog/photos.scss";
 @import "../blocks/catalog/panorama.scss";
 @import "../blocks/catalog/comment.scss";
@@ -35,6 +34,7 @@
 
 // form
 @import "../blocks/form/form.scss";
+@import "../blocks/promo/form-promo.scss";
 @import "../blocks/form/fieldset.scss";
 @import "../blocks/form/fieldset/--fullname.scss";
 @import "../blocks/form/fieldset/--achievements.scss";

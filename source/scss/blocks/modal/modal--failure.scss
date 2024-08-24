@@ -6,6 +6,11 @@
     width: 460px;
     min-height: 363px;
   }
+
+  @media (min-width: $desktop) {
+    width: 780px;
+    min-height: 377px;
+  }
 }
 
 .modal--failure .modal__heading {
@@ -13,6 +18,10 @@
 
   @media (min-width: $tablet) {
     padding: 0 105px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 40px 0 23px;
   }
 }
 
@@ -23,8 +32,25 @@
     margin-bottom: 32px;
     padding: 0 70px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 63px;
+    padding: 0 185px;
+  }
+}
+
+.modal--failure .modal__button-wrapper {
+  @media (min-width: $desktop) {
+    width: 780px;
+    min-height: 163px;
+    display: flex;
+  }
 }
 
 .modal--failure .modal__button-wrapper--grey-background {
   background-color: transparent;
+
+  @media (min-width: $desktop) {
+    background-color: #F2F2F2;
+  }
 }

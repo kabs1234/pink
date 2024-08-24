@@ -1,4 +1,6 @@
 .promo {
+  min-height: 171px;
+
   &::before {
     content: "";
     position: absolute;
@@ -11,6 +13,8 @@
   }
 
   @media (min-width: $tablet) {
+    min-height: 330px;
+
     &::before {
       height: 440px;
       background: $black url('../../../img/decorative/promo-desktop.jpg') 50% 0px/1200px no-repeat;
@@ -18,6 +22,8 @@
   }
 
   @media (min-width: $desktop) {
+    min-height: 284px;
+
     &::before {
       height: 394px;
       background: $black url('../../../img/decorative/promo-desktop.jpg') 50% 40%/2560px no-repeat;

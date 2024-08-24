@@ -1,16 +1,13 @@
 .catalog__promo {
-  min-height: 171px;
   margin-bottom: 37px;
   padding-top: 22px;
 
   @media (min-width: $tablet) {
-    min-height: 330px;
     margin-bottom: 91px;
     padding-top: 66px;
   }
 
   @media (min-width: $desktop) {
-    min-height: 284px;
     margin-bottom: 91px;
     padding-top: 58px;
   }

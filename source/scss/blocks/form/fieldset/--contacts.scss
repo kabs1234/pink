@@ -5,7 +5,15 @@
     margin-bottom: 59px;
     padding: 36px 0 27px;
     border: 2px solid #E5E5E5;
-    order: 3;
+    grid-row: 3/4;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 33px 0 13px;
+    grid-column: 1/3;
+    grid-row: 2/3;
   }
 }
 
@@ -23,6 +31,12 @@
     width: 500px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop) {
+    width: auto;
+    margin: 0 58px;
+    display: flex;
+  }
 }
 
 .fieldset--contacts .fieldset__item {
@@ -33,6 +47,13 @@
   @media (min-width: $tablet) {
     &:not(:last-child) {
       margin-bottom: 29px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 70px;
     }
   }
 }
@@ -55,6 +76,12 @@
   }
 }
 
+.fieldset--contacts .fieldset__input {
+  @media (min-width: $desktop) {
+    min-width: 375px;
+  }
+}
+
 .fieldset__input-wrapper--decorative-icon {
   @media (min-width: $tablet) {
     position: relative;
@@ -62,6 +89,7 @@
     &::after {
       content: "";
       position: absolute;
+      top: 1px;
       right: 0;
       width: 61px;
       height: 61px;

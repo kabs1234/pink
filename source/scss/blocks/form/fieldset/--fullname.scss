@@ -3,7 +3,13 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 57px;
-    order: 1;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    margin-bottom: 0;
+    grid-column: 1/2;
   }
 }
 

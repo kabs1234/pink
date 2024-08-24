@@ -1,12 +1,14 @@
 .form-page__promo {
-  min-height: 171px;
   padding-top: 23px;
   margin-bottom: 37px;
 
   @media (min-width: $tablet) {
-    min-height: 330px;
     padding-top: 66px;
     margin-bottom: 91px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 58px;
   }
 }
 
@@ -15,5 +17,9 @@
 
   @media (min-width: $tablet) {
     padding: 0 15px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 225px;
   }
 }

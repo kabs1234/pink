@@ -7,7 +7,15 @@
     margin: 0 auto 59px;
     padding: 51px 0 46px;
     border: 2px solid #E5E5E5;
-    order: 2;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    margin-top: -15px;
+    margin-bottom: 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
 }
 
@@ -32,11 +40,21 @@
     margin: 0;
     margin-left: 58px;
   }
+
+  @media (min-width: $desktop) {
+    margin-left: 71px;
+  }
 }
 
 .fieldset--platform .fieldset__item {
   &:not(:last-child) {
     margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
   }
 }
 
