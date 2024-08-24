@@ -32,7 +32,6 @@
   @media (min-width: $tablet) {
     &::before {
       content: "";
-      // top: 264px;
       top: 243px;
       height: 433px;
       background: #F2F2F2;
@@ -42,7 +41,7 @@
 
   @media (min-width: $desktop) {
     &::before {
-      top: 367px;
+      top: 358px;
     }
   }
 }

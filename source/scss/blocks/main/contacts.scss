@@ -99,8 +99,7 @@
   text-align: center;
 }
 
-.contacts__phone {
-  margin-bottom: 19px;
+.contacts__link {
   display: block;
   font-family: Open Sans;
   font-size: 24px;
@@ -108,17 +107,23 @@
   line-height: 32.68px;
   text-align: center;
   text-decoration: none;
+
+  &:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba($color: #283645, $alpha: 0.3);
+  }
+}
+
+.contacts__phone {
+  margin-bottom: 19px;
 }
 
 .contacts__email {
   margin-bottom: 22px;
-  display: block;
-  font-family: Open Sans;
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 32.68px;
-  text-align: center;
-  text-decoration: none;
 }
 
 .contacts__address {

@@ -144,6 +144,16 @@
   line-height: 24px;
   text-decoration: none;
 
+  &:hover {
+    color: #283645;
+    border-bottom: 1px solid #283645;
+  }
+
+  &:active {
+    color: rgba($color: #283645, $alpha: 0.3);
+    border-bottom: 1px solid #283645;
+  }
+
   &--red-text {
     color: #D22856;
   }

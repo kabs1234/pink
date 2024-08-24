@@ -44,6 +44,15 @@
   }
 }
 
+.header__link:hover .header__logo {
+  filter: brightness(0) saturate(100%) invert(22%) sepia(95%) saturate(4284%) hue-rotate(333deg) brightness(89%) contrast(83%);
+}
+
+.header__link:active .header__logo {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(5976%) hue-rotate(153deg) brightness(113%) contrast(101%);
+  opacity: 0.3;
+}
+
 .header__logo {
   @media (min-width: $tablet) {
     width: 145px;
@@ -74,6 +83,13 @@
   }
 }
 
+.header__button:hover {
+  &::before {
+    background-color: #D22856;
+    box-shadow: 0 -10px 0 0 #D22856, 0 10px 0 0 #D22856;
+  }
+}
+
 .header__button--active {
   &::before {
     top: 10px;
@@ -94,5 +110,16 @@
     background-color: white;
     transform: rotate(-45deg);
     box-shadow: none;
+  }
+}
+
+.header__button--active:hover {
+  &::before {
+    background-color: #D22856;
+    box-shadow: none;
+  }
+
+  &::after {
+    background-color: #D22856;
   }
 }

@@ -6,6 +6,15 @@
   text-decoration: none;
 }
 
+.copyright:hover .copyright__image path {
+  fill: #283645;
+}
+
+.copyright:active .copyright__image path {
+  fill: #283645;
+  opacity: 0.3;
+}
+
 .copyright__text {
   margin-right: 15px;
   font-family: Open Sans;

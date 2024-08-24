@@ -19,6 +19,15 @@
   }
 }
 
+.footer__link:hover .footer__logo {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(61%) saturate(3238%) hue-rotate(326deg) brightness(85%) contrast(92%);
+}
+
+.footer__link:active .footer__logo {
+  filter: none;
+  opacity: 0.3;
+}
+
 .footer__logo {
   margin: 0 auto 41px;
   display: block;
