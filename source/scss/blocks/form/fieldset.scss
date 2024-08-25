@@ -91,4 +91,13 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+  outline: none;
+
+  &:hover {
+    border: 2px solid #283645;
+  }
+
+  &:focus {
+    border: 2px solid #D22856;
+  }
 }

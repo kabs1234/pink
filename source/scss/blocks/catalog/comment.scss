@@ -74,6 +74,14 @@
   }
 }
 
+.comment__button:hover .comment__likes {
+  color: rgba($color: #D22856, $alpha: 0.6);
+}
+
+.comment__button:active .comment__likes {
+  color: rgba($color: #D22856, $alpha: 0.3);
+}
+
 .comment__likes {
   margin: 0;
   font-family: Open Sans;

@@ -62,6 +62,18 @@
   display: flex;
 }
 
+.fieldset--platform .fieldset__label:hover .fieldset__radio {
+  border: 2px solid #283645;
+}
+
+.fieldset--platform .fieldset__label:active .fieldset__radio {
+  border: 2px solid #D22856;
+}
+
+.fieldset--platform .fieldset__input:focus-visible ~ .fieldset__radio {
+  border: 2px solid #000000;
+}
+
 .fieldset--platform .fieldset__input {
   position: absolute;
   width: 0;

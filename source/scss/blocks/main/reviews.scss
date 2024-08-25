@@ -44,6 +44,14 @@
     background: url('../../../img/decorative/arrow.svg') no-repeat;
     opacity: 0.3;
 
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+
     &--next {
       top: 133px;
       right: 0;

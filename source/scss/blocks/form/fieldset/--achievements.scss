@@ -29,6 +29,18 @@
   display: flex;
 }
 
+.fieldset--achievements .fieldset__label:hover .fieldset__checkbox {
+  border: 2px solid #283645;
+}
+
+.fieldset--achievements .fieldset__label:active .fieldset__checkbox {
+  border: 2px solid #D22856;
+}
+
+.fieldset--achievements .fieldset__input:focus-visible ~ .fieldset__checkbox {
+  border: 2px solid #000000;
+}
+
 .fieldset--achievements .fieldset__list {
   width: 280px;
   margin: 75px auto 0;

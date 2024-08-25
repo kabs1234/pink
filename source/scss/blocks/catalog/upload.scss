@@ -165,11 +165,9 @@
 .upload-menu__filter-button--crop {
   width: 44px;
   height: 44px;
-  background-color: #D22856;
   mask: url('../../../img/content/crop.svg') center / 44px no-repeat;
 
   @media (min-width: $tablet) {
-    background-color: #D22856;
     mask-size: 22px;
   }
 
@@ -181,11 +179,9 @@
 .upload-menu__filter-button--fill {
   width: 48px;
   height: 43px;
-  background-color: rgba($color: #283645, $alpha: 0.3);
   mask: url('../../../img/content/fill.svg') center / 48px 43px no-repeat;
 
   @media (min-width: $tablet) {
-    background-color: #D22856;
     mask-size: 24px 22px;
   }
 
@@ -197,7 +193,6 @@
 .upload-menu__filter-button--contrast {
   width: 32px;
   height: 32px;
-  background-color: rgba($color: #283645, $alpha: 0.3);
   mask: url('../../../img/content/contrast.svg') center / 32px no-repeat;
 
   @media (min-width: $tablet) {
@@ -213,17 +208,43 @@
 .upload-menu__filter-button {
   padding: 0;
   border: none;
+  background-color: rgba($color: #283645, $alpha: 0.3);
+
+  &:hover {
+    background-color: rgba($color: #283645, $alpha: 0.5);
+  }
 
   @media (min-width: $tablet) {
     width: 30px;
     height: 30px;
     margin-right: 25px;
+    background-color: #D22856;
+
+    &:hover {
+      background-color: #D22856;
+    }
+
+    &:active {
+      background-color: #D22856;
+    }
   }
 
   @media (min-width: $desktop) {
     width: 50px;
     height: 50px;
     margin-right: 45px;
+  }
+}
+
+.upload-menu__filter-button--active {
+  background-color: #D22856;
+
+  &:hover {
+    background-color: #D22856;
+  }
+
+  &:active {
+    background-color: #D22856;
   }
 }
 
@@ -268,6 +289,10 @@
   -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: #D22856;
+  }
 }
 
 .upload-menu__effect-range::-moz-slider-thumb {
@@ -277,6 +302,10 @@
   background-color: $white;
   border: 2px solid #D22856;
   cursor: pointer;
+
+  &:hover {
+    background-color: #D22856;
+  }
 }
 
 .upload__button {
@@ -315,6 +344,16 @@
   margin-bottom: 12px;
   border: 3px solid #D22856;
 
+  &:hover {
+    background-color: #D22856;
+    color: $white;
+  }
+
+  &:active {
+    background-color: #D22856;
+    color: rgba($color: $white, $alpha: 0.3);
+  }
+
   @media (min-width: $tablet) {
     margin: 0;
     margin-top: 6px;
@@ -331,6 +370,17 @@
 .upload__button--cancel {
   margin-bottom: 0;
   border: 3px solid rgba($color: #283645, $alpha: 0.1);
+
+  &:hover {
+    color: rgba($color: #283645, $alpha: 0.3);
+    border: 3px solid rgba($color: #283645, $alpha: 0.3);
+  }
+
+  &:active {
+    border: none;
+    background-color: rgba($color: #283645, $alpha: 0.3);
+    color: rgba($color: $white, $alpha: 0.3);
+  }
 
   @media (min-width: $tablet) {
     margin-top: 15px;
