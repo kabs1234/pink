@@ -7,40 +7,38 @@
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body class="page-body">
-    <header class="header">
-      <div class="header__wrapper">
-        <a class="header__link" href="index.html">
+    <header class="page-body__header header">
+      <nav class="header__nav nav">
+        <a class="nav__main-link" href="index.html">
           <picture>
             <source media="(min-width: 1200px)" srcset="./img/content/header-logo-desktop.svg">
             <source media="(min-width: 660px)" srcset="./img/content/header-logo-tablet.svg">
-            <img class="header__logo" src="./img/content/header-logo-mobile.svg" width="74" height="23">
+            <img class="nav__logo" src="./img/content/header-logo-mobile.svg" width="74" height="23">
           </picture>
         </a>
 
-        <button class="header__button">
+        <button class="nav__button">
           <span class="visually-hidden">Открыть меню навигации</span>
         </button>
 
-        <nav class="header__nav nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="index.html">Главная</a>
-            </li>
-            <li class="nav__item nav__item--active">
-              <a class="nav__link">Фотографии</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item nav__item--active">
+            <a class="nav__link">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <main class="catalog">
+    <main class="page-body__catalog catalog">
       <div class="catalog__promo promo">
         <h1 class="promo__heading promo__heading--white-text promo__heading--catalog">Фотографии<br> пользователей</h1>
       </div>

@@ -1,5 +1,6 @@
 .promo {
-  min-height: 171px;
+  min-height: 164px;
+  background-color: black;
 
   &::before {
     content: "";
@@ -9,7 +10,7 @@
     height: 237px;
     background: $black url('../../../img/decorative/promo-tablet.png') 50% -200px/660px no-repeat;
     background-size: auto;
-    z-index: -1;
+    z-index: 0;
   }
 
   @media (min-width: $tablet) {
@@ -32,6 +33,7 @@
 }
 
 .promo__heading {
+  position: relative;
   margin: 0;
   font-family: Open Sans;
   font-size: 24px;

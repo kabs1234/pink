@@ -1,15 +1,21 @@
 .main__promo {
+  padding-top: 17px;
+
   @media (min-width: $tablet) {
     position: relative;
-    min-height: 525px;
+    min-height: 619px;
+    padding-top: 74px;
   }
 
   @media (min-width: $desktop) {
-    min-height: 645px;
+    min-height: 743px;
+    padding-top: 98px;
   }
 }
 
 .main-promo {
+  background-color: black;
+
   &::before {
     content: "";
     position: absolute;
@@ -17,7 +23,7 @@
     width: 100%;
     min-height: 462px;
     background: $black url('../../../img/decorative/promo-index-tablet.jpg') 50% 50%/ 660px 462px no-repeat;
-    z-index: -1;
+    z-index: 1;
   }
 
   &::after {
@@ -29,46 +35,48 @@
     min-height: 286px;
     background: url('../../../img/decorative/holding-phone-mobile.png') 0 0 no-repeat,
     url('../../../img/decorative/phone-screen-mobile.jpg') 104px 33px no-repeat;
+    z-index: 1;
   }
 
   @media (min-width: $tablet) {
     &::before {
-      top: -204px;
+      top: -110px;
       min-height: 729px;
       background: $black url('../../../img/decorative/promo-index-tablet.jpg') 50% 0px/1200px 729px no-repeat;
     }
 
     &::after {
-      width: 660px;
-      top: -20px;
+      top: auto;
+      bottom: 0;
       left: calc(50vw - 330px);
+      width: 660px;
       min-height: 545px;
       background: url('../../../img/decorative/holding-phone-tablet.png') 0 0 no-repeat,
       url('../../../img/decorative/phone-screen-tablet.jpg') 372px 53px no-repeat;
-      z-index: -1;
     }
   }
 
   @media (min-width: $desktop) {
     &::before {
-      top: -210px;
-      min-height: 855px;
-      background: $black url('../../../img/decorative/promo-index-desktop.jpg') 50% 0px/2560px 855px no-repeat;
+      top: -112px;
+      min-height: 853px;
+      background: $black url('../../../img/decorative/promo-index-desktop.jpg') 50% 0px/2560px no-repeat;
     }
 
     &::after {
-      top: 0px;
-      width: 884px;
       left: calc(50vw - 462px);
-      min-height: 669px;
+      width: 884px;
+      height: 645px;
       background: url('../../../img/decorative/holding-phone-desktop.png') no-repeat,
-      url('../../../img/decorative/phone-screen-desktop.jpg') 570px 67px no-repeat;
-      z-index: -1;
+      url('../../../img/decorative/phone-screen-desktop.jpg') 570px 65px no-repeat;
     }
   }
 }
 
 .main-promo__content {
+  position: relative;
+  z-index: 2;
+
   @media (min-width: $tablet) {
     width: 300px;
     margin-left: calc(50vw - 310px);
@@ -81,7 +89,7 @@
 
 .main-promo__slogan {
   margin: 0;
-  margin-bottom: 313px;
+  margin-bottom: 315px;
   padding: 0 10px;
   font-family: Open Sans;
   font-size: 24px;
@@ -111,7 +119,7 @@
 }
 
 .main-promo__available-platforms {
-  padding: 29px 20px 31px;
+  padding: 29px 20px 30px;
 
   @media (min-width: $tablet) {
     padding: 0;

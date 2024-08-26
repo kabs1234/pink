@@ -2,7 +2,7 @@
   margin-bottom: 42px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 57px;
+    margin-bottom: 56px;
     grid-row: 1/2;
   }
 
@@ -34,7 +34,7 @@
     align-items: center;
 
     &:not(:last-child) {
-      margin-bottom: 52px;
+      margin-bottom: 53px;
     }
   }
 }

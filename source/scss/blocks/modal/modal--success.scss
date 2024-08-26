@@ -51,6 +51,6 @@
 .modal--success .modal__button {
   @media (min-width: $desktop) {
     width: 456px;
-    height: 59px;
+    min-height: 59px;
   }
 }

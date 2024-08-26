@@ -1,4 +1,21 @@
-.nav {
+.header__nav {
+  width: 280px;
+  min-height: 73px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    width: 620px;
+    min-height: 110px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 940px;
+  }
+}
+
+.nav__list {
   display: none;
 
   &--opened {
@@ -7,6 +24,105 @@
 
   @media (min-width: $desktop) {
     display: block;
+  }
+}
+
+.nav__main-link {
+  margin-right: auto;
+
+  @media (min-width: $tablet) {
+    margin-top: -11px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 175px;
+  }
+}
+
+.nav__main-link:hover .nav__logo {
+  filter: brightness(0) saturate(100%) invert(22%) sepia(95%) saturate(4284%) hue-rotate(333deg) brightness(89%) contrast(83%);
+}
+
+.nav__main-link:active .nav__logo {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(5976%) hue-rotate(153deg) brightness(113%) contrast(101%);
+  opacity: 0.3;
+}
+
+.nav__logo {
+  @media (min-width: $tablet) {
+    width: 145px;
+    height: 40px;
+  }
+}
+
+.nav__button {
+  position: relative;
+  top: -4px;
+  width: 50px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    right: 0;
+    width: 50px;
+    height: 4px;
+    background-color: $white;
+    box-shadow: 0 -10px 0 0 $white, 0 10px 0 0 $white;
+  }
+
+  @media (min-width: $tablet) {
+    top: auto;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.nav__button:hover {
+  &::before {
+    background-color: #D22856;
+    box-shadow: 0 -10px 0 0 #D22856, 0 10px 0 0 #D22856;
+  }
+}
+
+.nav__button--active {
+  top: auto;
+
+  &::before {
+    top: 10px;
+    right: -3px;
+    width: 29px;
+    height: 3px;
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: -3px;
+    width: 29px;
+    height: 3px;
+    background-color: white;
+    transform: rotate(-45deg);
+    box-shadow: none;
+  }
+}
+
+.nav__button--active:hover {
+  &::before {
+    background-color: #D22856;
+    box-shadow: none;
+  }
+
+  &::after {
+    background-color: #D22856;
   }
 }
 
@@ -26,6 +142,7 @@
   @media (min-width: $desktop) {
     position: static;
     display: flex;
+    flex-wrap: wrap;
   }
 }
 

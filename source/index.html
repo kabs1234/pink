@@ -8,36 +8,33 @@
   </head>
   <body class="page-body">
     <header class="page-body__header header">
-      <div class="header__wrapper">
-        <a class="header__link">
+      <nav class="header__nav nav">
+        <a class="nav__main-link">
           <picture>
             <source media="(min-width: 1200px)" srcset="./img/content/header-logo-desktop.svg">
             <source media="(min-width: 660px)" srcset="./img/content/header-logo-tablet.svg">
-            <img class="header__logo" src="./img/content/header-logo-mobile.svg" width="74" height="23">
+            <img class="nav__logo" src="./img/content/header-logo-mobile.svg" width="74" height="23">
           </picture>
         </a>
 
-        <button class="header__button">
+        <button class="nav__button">
           <span class="visually-hidden">Открыть меню навигации</span>
         </button>
-
-        <nav class="header__nav nav">
-          <ul class="nav__list">
-            <li class="nav__item nav__item--active">
-              <a class="nav__link">Главная</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="catalog.html">Фотографии</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <ul class="nav__list">
+          <li class="nav__item nav__item--active">
+            <a class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main">
@@ -48,24 +45,21 @@
           <p class="main-promo__slogan">Взгляните на жизнь<br> иначе!</p>
 
           <div class="main-promo__available-platforms platforms platforms--blue-background">
-            <a href="" class="platforms__download-button">Скачать приложение</a>
+            <a class="platforms__download-button" href="app-page" target="_blank">Скачать приложение</a>
 
             <ul class="platforms__list">
               <li class="platforms__item">
-                <a href="" class="platforms__link">
-                  <img src="./img/content/apple-logo.svg" alt="Платформа IOS" class="platforms__icon">
+                <a class="platforms__link platforms__link--apple" href="app-page-apple" target="_blank">
                   <span class="visually-hidden">Приложение в Apple Store</span>
                 </a>
               </li>
               <li class="platforms__item">
-                <a href="" class="platforms__link">
-                  <img src="./img/content/android-logo.svg" alt="Платформа Android" class="platforms__icon">
+                <a class="platforms__link platforms__link--android" href="app-page-android" target="_blank">
                   <span class="visually-hidden">Приложение в Google Play</span>
                 </a>
               </li>
               <li class="platforms__item">
-                <a href="" class="platforms__link">
-                  <img src="./img/content/microsoft-logo.svg" alt="Платформа Windows" class="platforms__icon">
+                <a class="platforms__link platforms__link--microsoft" href="app-page-microsoft" target="_blank">
                   <span class="visually-hidden">Приложение в Microsoft Store</span>
                 </a>
               </li>
@@ -76,10 +70,10 @@
         </div>
       </div>
 
-      <section class="main__information information information--skew-background information--phone-decorative">
+      <section class="main__information information information--skew-background">
         <p class="information__slogan">Устали от серости мегаполиса? <span class="information__text">Нам есть, что вам<br> предложить!</span></p>
 
-        <div class="information__wrapper information__wrapper--grey-background">
+        <div class="information__wrapper information__wrapper--grey-background information__wrapper--phone-decorative">
           <ul class="information__advantages advantages">
             <li class="advantages__item advantages__item--phone-background advantages__item--mood advantages__item--shadow">
               <p class="advantages__termin">Поднимает настроение</p>

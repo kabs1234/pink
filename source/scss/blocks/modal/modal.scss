@@ -4,6 +4,7 @@
   height: 100vh;
   margin: auto;
   display: none;
+  z-index: 999;
 
   &--active {
     display: flex;
@@ -75,6 +76,19 @@
   font-weight: 700;
   line-height: 30px;
   text-align: center;
+
+  &:hover {
+    background-color: #1C9B5E;
+  }
+
+  &:active {
+    color: rgba($color: $white, $alpha: 0.3);
+    background-color: #1C9B5E;
+  }
+
+  &:disabled {
+    background-color: #E5E5E5;
+  }
 
   &--green-background {
     background-color: #2AAB6D;

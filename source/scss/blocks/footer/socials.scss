@@ -3,16 +3,12 @@
   margin-bottom: 41px;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
 
   @media (min-width: $tablet) {
     margin-bottom: 0px;
-    margin-right: 94px;
-  }
-
-  @media (min-width: $desktop) {
-    margin-right: 233px;
   }
 }
 

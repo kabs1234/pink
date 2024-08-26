@@ -46,7 +46,7 @@
   }
 }
 
-.information--phone-decorative {
+.information__wrapper--phone-decorative {
   &::after {
     content: "";
     bottom: 0;
@@ -62,7 +62,7 @@
 
   @media (min-width: $tablet) {
     &::after {
-      top: 244px;
+      bottom: 0;
       left: calc(50vw - 310px);
       margin: 0;
       width: 268px;
@@ -114,12 +114,6 @@
     height: 100%;
     background-color: #F2F2F2;
     z-index: -1;
-  }
-
-  @media (min-width: $tablet) {
-    &::before {
-      height: 410px;
-    }
   }
 
   @media (min-width: $desktop) {

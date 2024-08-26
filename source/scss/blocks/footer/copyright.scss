@@ -4,6 +4,14 @@
   align-items: center;
   text-align: center;
   text-decoration: none;
+
+  @media (min-width: $tablet) {
+    margin-left: 94px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 231px;
+  }
 }
 
 .copyright:hover .copyright__image path {

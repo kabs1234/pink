@@ -5,7 +5,7 @@
   flex-direction: column;
 }
 
-.price-item--best-seller {
+.price-item--best-seller .price-item__wrapper {
   position: relative;
 
   &::before {
@@ -51,6 +51,7 @@
 }
 
 .price-item__name {
+  position: relative;
   margin: 0;
   font-family: Open Sans;
   font-size: 16px;

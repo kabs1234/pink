@@ -1,5 +1,5 @@
 .catalog__promo {
-  margin-bottom: 37px;
+  margin-bottom: 44px;
   padding-top: 22px;
 
   @media (min-width: $tablet) {
@@ -10,19 +10,5 @@
   @media (min-width: $desktop) {
     margin-bottom: 91px;
     padding-top: 58px;
-  }
-}
-
-.promo__heading--catalog {
-  padding: 0 5px;
-
-  br {
-    display: none;
-  }
-
-  @media (min-width: $desktop) {
-    br {
-      display: inline;
-    }
   }
 }
