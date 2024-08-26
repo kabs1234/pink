@@ -68,6 +68,7 @@
   background: url('../../../img/decorative/heart.svg') left center no-repeat;
 
   @media (min-width: $tablet) {
+    text-align: left;
     padding: 0;
     width: 100%;
     background: url('../../../img/decorative/heart.svg') right center no-repeat;
@@ -83,7 +84,6 @@
 }
 
 .comment__likes {
-  margin: 0;
   font-family: Open Sans;
   font-size: 12px;
   font-weight: 400;
@@ -92,10 +92,6 @@
 
   &--red-text {
     color: #D22856;
-  }
-
-  @media (min-width: $tablet) {
-    text-align: left;
   }
 }
 

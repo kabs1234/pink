@@ -59,7 +59,7 @@
   @media (min-width: $desktop) {
     &::before {
       top: 41px;
-      left: calc(50vw - 454px);
+      left: calc(50vw - 446px);
       width: 252px;
       height: 252px;
       font-size: 120px;
@@ -70,7 +70,7 @@
       content: "";
       position: absolute;
       top: -29px;
-      left: calc(50vw - 477px);
+      left: calc(50vw - 470px);
       width: 298px;
       height: 345px;
       background: url('../../../img/decorative/timer-desktop.svg') no-repeat;
@@ -91,7 +91,7 @@
   @media (min-width: $desktop) {
     width: 530px;
     margin: 0;
-    margin-left: calc(50vw - 108px);
+    margin-left: calc(50vw - 100px);
   }
 }
 

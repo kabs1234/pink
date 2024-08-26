@@ -636,7 +636,7 @@ template {
     background: #000000 url("../../../img/decorative/promo-index-desktop.jpg") 50% 0px/2560px no-repeat;
   }
   .main-promo::after {
-    left: calc(50vw - 462px);
+    left: calc(50vw - 454px);
     width: 884px;
     height: 645px;
     background: url("../../../img/decorative/holding-phone-desktop.png") no-repeat, url("../../../img/decorative/phone-screen-desktop.jpg") 570px 65px no-repeat;
@@ -655,7 +655,7 @@ template {
 }
 @media (min-width: 1200px) {
   .main-promo__content {
-    margin-left: calc(50vw - 480px);
+    margin-left: calc(50vw - 470px);
   }
 }
 
@@ -1180,7 +1180,7 @@ template {
 @media (min-width: 1200px) {
   .effect--timer-background::before {
     top: 41px;
-    left: calc(50vw - 454px);
+    left: calc(50vw - 446px);
     width: 252px;
     height: 252px;
     font-size: 120px;
@@ -1190,7 +1190,7 @@ template {
     content: "";
     position: absolute;
     top: -29px;
-    left: calc(50vw - 477px);
+    left: calc(50vw - 470px);
     width: 298px;
     height: 345px;
     background: url("../../../img/decorative/timer-desktop.svg") no-repeat;
@@ -1211,7 +1211,7 @@ template {
   .effect__content {
     width: 530px;
     margin: 0;
-    margin-left: calc(50vw - 108px);
+    margin-left: calc(50vw - 100px);
   }
 }
 
@@ -1907,10 +1907,6 @@ template {
   }
 }
 
-.contacts--red-text {
-  color: #D22856;
-}
-
 .contacts__description {
   margin: 0;
   margin-bottom: 33px;
@@ -1963,6 +1959,9 @@ template {
 .contacts__link:active {
   color: rgba(40, 54, 69, 0.3);
 }
+.contacts__link--red-text {
+  color: #D22856;
+}
 
 .contacts__phone {
   margin-bottom: 19px;
@@ -1982,6 +1981,9 @@ template {
   line-height: 32.68px;
   text-align: center;
   text-decoration: none;
+}
+.contacts__address--red-text {
+  color: #D22856;
 }
 
 .location {
@@ -2268,6 +2270,7 @@ template {
 }
 @media (min-width: 660px) {
   .comment__button {
+    text-align: left;
     padding: 0;
     width: 100%;
     background: url("../../../img/decorative/heart.svg") right center no-repeat;
@@ -2283,7 +2286,6 @@ template {
 }
 
 .comment__likes {
-  margin: 0;
   font-family: Open Sans;
   font-size: 12px;
   font-weight: 400;
@@ -2292,11 +2294,6 @@ template {
 }
 .comment__likes--red-text {
   color: #D22856;
-}
-@media (min-width: 660px) {
-  .comment__likes {
-    text-align: left;
-  }
 }
 
 .panorama__comment {

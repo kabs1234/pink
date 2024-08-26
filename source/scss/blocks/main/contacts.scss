@@ -61,10 +61,6 @@
   }
 }
 
-.contacts--red-text {
-  color: #D22856;
-}
-
 .contacts__description {
   margin: 0;
   margin-bottom: 33px;
@@ -116,6 +112,10 @@
   &:active {
     color: rgba($color: #283645, $alpha: 0.3);
   }
+
+  &--red-text {
+    color: #D22856;
+  }
 }
 
 .contacts__phone {
@@ -136,4 +136,8 @@
   line-height: 32.68px;
   text-align: center;
   text-decoration: none;
+
+  &--red-text {
+    color: #D22856;
+  }
 }

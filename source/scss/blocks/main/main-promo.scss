@@ -64,7 +64,7 @@
     }
 
     &::after {
-      left: calc(50vw - 462px);
+      left: calc(50vw - 454px);
       width: 884px;
       height: 645px;
       background: url('../../../img/decorative/holding-phone-desktop.png') no-repeat,
@@ -83,7 +83,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-left: calc(50vw - 480px);
+    margin-left: calc(50vw - 470px);
   }
 }
 
