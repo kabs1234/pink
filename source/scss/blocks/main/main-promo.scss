@@ -1,8 +1,8 @@
 .main__promo {
   padding-top: 17px;
+  position: relative;
 
   @media (min-width: $tablet) {
-    position: relative;
     min-height: 619px;
     padding-top: 74px;
   }
@@ -14,61 +14,111 @@
 }
 
 .main-promo {
-  background-color: black;
+  background-color: $black;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 100%;
-    min-height: 462px;
-    background: $black url('../../../img/decorative/promo-index-tablet.jpg') 50% 50%/ 660px 462px no-repeat;
-    z-index: 1;
-  }
-
+.main-promo--phone-background {
   &::after {
     content: "";
     position: absolute;
-    top: 176px;
+    top: 103px;
     left: calc(50vw - 160px);
     width: 320px;
-    min-height: 286px;
-    background: url('../../../img/decorative/holding-phone-mobile.png') 0 0 no-repeat,
-    url('../../../img/decorative/phone-screen-mobile.jpg') 104px 33px no-repeat;
+    height: 286px;
+    background: url("../../../img/decorative/holding-phone-mobile.png") 0 0 no-repeat,
+    url("../../../img/decorative/phone-screen-mobile.jpg") 104px 33px no-repeat;
     z-index: 1;
   }
 
-  @media (min-width: $tablet) {
-    &::before {
-      top: -110px;
-      min-height: 729px;
-      background: $black url('../../../img/decorative/promo-index-tablet.jpg') 50% 0px/1200px 729px no-repeat;
+  @media (min-resolution: 2dppx) {
+    &::after {
+      background: url("../../../img/decorative/holding-phone-mobile@2x.png") 0 0/320px 286px no-repeat,
+      url("../../../img/decorative/phone-screen-mobile@2x.jpg") 104px 33px/111px 197px no-repeat;
     }
+  }
 
+  @media (min-width: $tablet) {
     &::after {
       top: auto;
       bottom: 0;
       left: calc(50vw - 330px);
       width: 660px;
-      min-height: 545px;
-      background: url('../../../img/decorative/holding-phone-tablet.png') 0 0 no-repeat,
-      url('../../../img/decorative/phone-screen-tablet.jpg') 372px 53px no-repeat;
+      height: 545px;
+      background: url("../../../img/decorative/holding-phone-tablet.png") 0 0 no-repeat,
+      url("../../../img/decorative/phone-screen-tablet.jpg") 372px 53px no-repeat;
+    }
+
+    @media (min-resolution: 2dppx) {
+      &::after {
+        background: url("../../../img/decorative/holding-phone-tablet@2x.png") 0 0/660px 545px no-repeat,
+        url("../../../img/decorative/phone-screen-tablet@2x.jpg") 372px 53px/195px 346px no-repeat;
+      }
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &::after {
+      left: calc(50vw - 454px);
+      width: 884px;
+      height: 645px;
+      background: url("../../../img/decorative/holding-phone-desktop.png") no-repeat,
+      url("../../../img/decorative/phone-screen-desktop.jpg") 570px 65px no-repeat;
+    }
+
+    @media (min-resolution: 2dppx) {
+      &::after {
+        background: url("../../../img/decorative/holding-phone-desktop@2x.png") 0 0 / 1050px 645px no-repeat,
+        url("../../../img/decorative/phone-screen-desktop@2x.jpg") 570px 65px / 230px 408px no-repeat;
+      }
+    }
+  }
+}
+
+.main-promo--city-background {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -73px;
+    width: 100%;
+    height: 462px;
+    background-image: url("../../../img/decorative/promo-index-mobile.jpg");
+    background-position: 50% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  @media (min-resolution: 2dppx) {
+    &::before {
+      background-image: url("../../../img/decorative/promo-index-mobile@2x.jpg");
+    }
+  }
+
+  @media (min-width: $tablet) {
+    &::before {
+      top: -110px;
+      height: 729px;
+      background-image: url("../../../img/decorative/promo-index-tablet.jpg");
+    }
+
+    @media (min-resolution: 2dppx) {
+      &::before {
+        background-image: url("../../../img/decorative/promo-index-tablet@2x.jpg");
+      }
     }
   }
 
   @media (min-width: $desktop) {
     &::before {
-      top: -112px;
-      min-height: 853px;
-      background: $black url('../../../img/decorative/promo-index-desktop.jpg') 50% 0px/2560px no-repeat;
+      top: -110px;
+      height: 853px;
+      background-image: url("../../../img/decorative/promo-index-desktop.jpg");
     }
 
-    &::after {
-      left: calc(50vw - 454px);
-      width: 884px;
-      height: 645px;
-      background: url('../../../img/decorative/holding-phone-desktop.png') no-repeat,
-      url('../../../img/decorative/phone-screen-desktop.jpg') 570px 65px no-repeat;
+    @media (min-resolution: 2dppx) {
+      &::before {
+        background-image: url("../../../img/decorative/promo-index-desktop@2x.jpg");
+      }
     }
   }
 }
@@ -91,7 +141,7 @@
   margin: 0;
   margin-bottom: 315px;
   padding: 0 10px;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 24px;
   font-weight: 300;
   line-height: 28.8px;

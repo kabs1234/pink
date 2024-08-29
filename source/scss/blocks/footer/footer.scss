@@ -40,12 +40,21 @@
 }
 
 .footer__link:hover .footer__logo {
-  filter: brightness(0) saturate(100%) invert(25%) sepia(61%) saturate(3238%) hue-rotate(326deg) brightness(85%) contrast(92%);
+  filter: brightness(0) saturate(100%) invert(35%) sepia(73%) saturate(7406%) hue-rotate(332deg) brightness(88%) contrast(86%);
 }
 
 .footer__link:active .footer__logo {
   filter: none;
   opacity: 0.3;
+}
+
+.footer__link--active:hover .footer__logo {
+  filter: none;
+}
+
+.footer__link--active:active .footer__logo {
+  filter: none;
+  opacity: 1;
 }
 
 .footer__logo {

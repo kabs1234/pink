@@ -8,7 +8,7 @@
   list-style-type: none;
 
   @media (min-width: $tablet) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 }
 
@@ -31,26 +31,26 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba($color: #283645, $alpha: 0.1);
+  box-shadow: 0 0 0 3px rgba($color: $prime-color-blue, $alpha: 0.1);
 
   &:hover {
-    box-shadow: 0 0 0 3px #283645;
+    box-shadow: 0 0 0 3px $prime-color-blue;
   }
 
   &:active {
-    box-shadow: 0 0 0 3px #283645;
+    box-shadow: 0 0 0 3px $prime-color-blue;
     opacity: 0.1;
   }
 }
 
 .socials__item--twitter .socials__link {
-  background: url('../../../img/content/twitter.svg') center no-repeat;
+  background: url("../../../img/content/twitter.svg") center no-repeat;
 }
 
 .socials__item--facebook .socials__link {
-  background: url('../../../img/content/facebook.svg') center no-repeat;
+  background: url("../../../img/content/facebook.svg") center no-repeat;
 }
 
 .socials__item--youtube .socials__link {
-  background: url('../../../img/content/youtube.svg') center no-repeat;
+  background: url("../../../img/content/youtube.svg") center no-repeat;
 }

@@ -17,15 +17,15 @@
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 'phone email'
-                         'address address';
+    grid-template-areas: "phone email"
+      "address address";
     column-gap: 20px;
     row-gap: 19px;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 'phone address email';
+    grid-template-areas: "phone address email";
   }
 }
 
@@ -64,11 +64,11 @@
 .contacts__description {
   margin: 0;
   margin-bottom: 33px;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 24px;
   font-weight: 300;
   line-height: 28.8px;
-  color: #283645;
+  color: $prime-color-blue;
   text-align: center;
 
   @media (min-width: $tablet) {
@@ -87,17 +87,17 @@
 
 .contacts__text {
   display: block;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 18px;
   font-weight: 700;
   line-height: 24.51px;
-  color: #283645;
+  color: $prime-color-blue;
   text-align: center;
 }
 
 .contacts__link {
   display: block;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 24px;
   font-weight: 300;
   line-height: 32.68px;
@@ -105,16 +105,16 @@
   text-decoration: none;
 
   &:hover {
-    color: #283645;
+    color: $prime-color-blue;
     text-decoration: underline;
   }
 
   &:active {
-    color: rgba($color: #283645, $alpha: 0.3);
+    color: rgba($color: $prime-color-blue, $alpha: 0.3);
   }
 
   &--red-text {
-    color: #D22856;
+    color: $prime-color-red;
   }
 }
 
@@ -130,7 +130,7 @@
   margin: 0;
   padding: 0 12px;
   display: block;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 24px;
   font-weight: 300;
   line-height: 32.68px;
@@ -138,6 +138,6 @@
   text-decoration: none;
 
   &--red-text {
-    color: #D22856;
+    color: $prime-color-red;
   }
 }

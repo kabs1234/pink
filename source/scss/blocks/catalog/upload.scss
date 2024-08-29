@@ -1,14 +1,14 @@
 .upload__text {
   margin: 0;
   margin-bottom: 42px;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
   text-align: center;
 
   &--blue-text {
-    color: #283645;
+    color: $prime-color-blue;
   }
 
   @media (min-width: $tablet) {
@@ -38,7 +38,7 @@
 
 .upload-menu {
   &--grey {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
   }
 
   @media (min-width: $tablet) {
@@ -55,8 +55,13 @@
 }
 
 .upload-menu__wrapper {
+  margin-bottom: 38px;
+  padding-bottom: 35px;
+
   @media (min-width: $tablet) {
+    margin-bottom: 0;
     margin-top: 5px;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop) {
@@ -77,18 +82,8 @@
   }
 }
 
-.upload-menu__wrapper {
-  margin-bottom: 38px;
-  padding-bottom: 35px;
-
-  @media (min-width: $tablet) {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-}
-
 .upload-menu__wrapper--underline {
-  border-bottom: 1px solid rgba($color: #283645, $alpha: 0.1);
+  border-bottom: 1px solid rgba($color: $prime-color-blue, $alpha: 0.1);
 
   @media (min-width: $tablet) {
     border-bottom: none;
@@ -143,7 +138,7 @@
       bottom: -21px;
       width: 275px;
       height: 1px;
-      background-color: rgba($color: #283645, $alpha: 0.1);
+      background-color: rgba($color: $prime-color-blue, $alpha: 0.1);
       z-index: 1;
     }
   }
@@ -165,7 +160,7 @@
 .upload-menu__filter-button--crop {
   width: 44px;
   height: 44px;
-  mask: url('../../../img/content/crop.svg') center / 44px no-repeat;
+  mask: url("../../../img/content/crop.svg") center / 44px no-repeat;
 
   @media (min-width: $tablet) {
     mask-size: 22px;
@@ -179,7 +174,7 @@
 .upload-menu__filter-button--fill {
   width: 48px;
   height: 43px;
-  mask: url('../../../img/content/fill.svg') center / 48px 43px no-repeat;
+  mask: url("../../../img/content/fill.svg") center / 48px 43px no-repeat;
 
   @media (min-width: $tablet) {
     mask-size: 24px 22px;
@@ -193,10 +188,10 @@
 .upload-menu__filter-button--contrast {
   width: 32px;
   height: 32px;
-  mask: url('../../../img/content/contrast.svg') center / 32px no-repeat;
+  mask: url("../../../img/content/contrast.svg") center / 32px no-repeat;
 
   @media (min-width: $tablet) {
-    background-color: #D22856;
+    background-color: $prime-color-red;
     mask-size: 16px;
   }
 
@@ -208,24 +203,24 @@
 .upload-menu__filter-button {
   padding: 0;
   border: none;
-  background-color: rgba($color: #283645, $alpha: 0.3);
+  background-color: rgba($color: $prime-color-blue, $alpha: 0.3);
 
   &:hover {
-    background-color: rgba($color: #283645, $alpha: 0.5);
+    background-color: rgba($color: $prime-color-blue, $alpha: 0.5);
   }
 
   @media (min-width: $tablet) {
     width: 30px;
     height: 30px;
     margin-right: 25px;
-    background-color: #D22856;
+    background-color: $prime-color-red;
 
     &:hover {
-      background-color: #D22856;
+      background-color: $prime-color-red;
     }
 
     &:active {
-      background-color: #D22856;
+      background-color: $prime-color-red;
     }
   }
 
@@ -237,14 +232,14 @@
 }
 
 .upload-menu__filter-button--active {
-  background-color: #D22856;
+  background-color: $prime-color-red;
 
   &:hover {
-    background-color: #D22856;
+    background-color: $prime-color-red;
   }
 
   &:active {
-    background-color: #D22856;
+    background-color: $prime-color-red;
   }
 }
 
@@ -252,7 +247,7 @@
   width: 240px;
   height: 2px;
   margin: 0 auto;
-  background-color: #283645;
+  background-color: $prime-color-blue;
   display: none;
   -webkit-appearance: none;
   appearance: none;
@@ -285,26 +280,26 @@
   height: 14px;
   border-radius: 50%;
   background-color: $white;
-  border: 2px solid #D22856;
+  border: 2px solid $prime-color-red;
   -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
 
   &:hover {
-    background-color: #D22856;
+    background-color: $prime-color-red;
   }
 }
 
-.upload-menu__effect-range::-moz-slider-thumb {
+.upload-menu__effect-range::-moz-range-thumb {
   width: 14px;
   height: 14px;
   border-radius: 50%;
   background-color: $white;
-  border: 2px solid #D22856;
+  border: 2px solid $prime-color-red;
   cursor: pointer;
 
   &:hover {
-    background-color: #D22856;
+    background-color: $prime-color-red;
   }
 }
 
@@ -314,19 +309,20 @@
   margin: 0 auto;
   padding: 0;
   border-radius: 30px;
+  background-color: transparent;
   display: block;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
   text-align: center;
 
   &--red-text {
-    color: #D22856;
+    color: $prime-color-red;
   }
 
   &--light-text {
-    color: rgba($color: #283645, $alpha: 0.1);
+    color: rgba($color: $prime-color-blue, $alpha: 0.1);
   }
 
   @media (min-width: $tablet) {
@@ -342,15 +338,15 @@
 
 .upload__button--upload {
   margin-bottom: 12px;
-  border: 3px solid #D22856;
+  border: 3px solid $prime-color-red;
 
   &:hover {
-    background-color: #D22856;
+    background-color: $prime-color-red;
     color: $white;
   }
 
   &:active {
-    background-color: #D22856;
+    background-color: $prime-color-red;
     color: rgba($color: $white, $alpha: 0.3);
   }
 
@@ -369,15 +365,15 @@
 
 .upload__button--cancel {
   margin-bottom: 0;
-  border: 3px solid rgba($color: #283645, $alpha: 0.1);
+  border: 3px solid rgba($color: $prime-color-blue, $alpha: 0.1);
 
   &:hover {
-    color: rgba($color: #283645, $alpha: 0.3);
-    border: 3px solid rgba($color: #283645, $alpha: 0.3);
+    color: rgba($color: $prime-color-blue, $alpha: 0.3);
+    border: 3px solid rgba($color: $prime-color-blue, $alpha: 0.3);
   }
 
   &:active {
-    background-color: rgba($color: #283645, $alpha: 0.3);
+    background-color: rgba($color: $prime-color-blue, $alpha: 0.3);
     color: rgba($color: $white, $alpha: 0.3);
   }
 

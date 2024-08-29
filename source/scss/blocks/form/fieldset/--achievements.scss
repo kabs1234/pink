@@ -6,7 +6,7 @@
     width: 620px;
     margin: 0 auto 59px;
     padding: 48px 0 44px;
-    border: 2px solid #E5E5E5;
+    border: 2px solid #e5e5e5;
     grid-row: 4/5;
   }
 
@@ -30,11 +30,11 @@
 }
 
 .fieldset--achievements .fieldset__label:hover .fieldset__checkbox {
-  border: 2px solid #283645;
+  border: 2px solid $prime-color-blue;
 }
 
 .fieldset--achievements .fieldset__label:active .fieldset__checkbox {
-  border: 2px solid #D22856;
+  border: 2px solid $prime-color-red;
 }
 
 .fieldset--achievements .fieldset__input:focus-visible ~ .fieldset__checkbox {
@@ -72,15 +72,19 @@
     &:nth-child(2) {
       order: 4;
     }
+
     &:nth-child(3) {
       order: 2;
     }
+
     &:nth-child(4) {
       order: 5;
     }
+
     &:nth-child(5) {
       order: 3;
     }
+
     &:last-child {
       order: 6;
     }
@@ -99,7 +103,7 @@
 
 .fieldset--achievements .fieldset__text-value {
   margin: 0;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -115,12 +119,12 @@
   height: 39px;
   width: 39px;
   margin-right: 20px;
-  border: 2px solid #E5E5E5;
-  background: #FFFFFF;
+  border: 2px solid #e5e5e5;
+  background: #ffffff;
   display: block;
   flex-shrink: 0;
 }
 
 .fieldset--achievements .fieldset__input:checked ~ .fieldset__checkbox {
-  background: #FFFFFF url('../../../../img/decorative/tick.svg') center no-repeat;
+  background: #ffffff url("../../../../img/decorative/tick.svg") center no-repeat;
 }

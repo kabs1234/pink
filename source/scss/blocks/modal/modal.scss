@@ -19,13 +19,13 @@
   }
 
   &--shadow {
-    box-shadow: 0px 7px 15px 0px #00010126;
+    box-shadow: 0 7px 15px 0 #00010126;
   }
 }
 
 .modal__heading {
   margin: 0;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -43,14 +43,14 @@
 
 .modal__description {
   margin: 0;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   text-align: center;
 
   &--blue-text {
-    color: #283645;
+    color: $prime-color-blue;
   }
 
   @media (min-width: $tablet) {
@@ -60,7 +60,7 @@
 
 .modal__button-wrapper {
   &--grey-background {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
   }
 }
 
@@ -71,27 +71,27 @@
   padding: 0;
   border: none;
   display: block;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   text-align: center;
 
   &:hover {
-    background-color: #1C9B5E;
+    background-color: #1c9b5e;
   }
 
   &:active {
     color: rgba($color: $white, $alpha: 0.3);
-    background-color: #1C9B5E;
+    background-color: #1c9b5e;
   }
 
   &:disabled {
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
   }
 
   &--green-background {
-    background-color: #2AAB6D;
+    background-color: #2aab6d;
   }
 
   &--white-text {

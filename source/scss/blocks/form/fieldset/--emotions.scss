@@ -6,7 +6,7 @@
     width: 620px;
     margin: 0 auto 66px;
     padding: 36px 0 41px;
-    border: 2px solid #E5E5E5;
+    border: 2px solid #e5e5e5;
     display: flex;
     justify-content: center;
     grid-row: 5/6;
@@ -22,10 +22,10 @@
 }
 
 .fieldset--emotions .fieldset__legend {
-  margin-bottom: 16px;
+  margin: 0 auto 16px;
 
   @media (min-width: $tablet) {
-    margin: 0;
+    margin: 0 auto;
     padding: 0 38px;
   }
 }

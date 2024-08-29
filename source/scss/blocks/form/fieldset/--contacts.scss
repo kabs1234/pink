@@ -4,7 +4,7 @@
   @media (min-width: $tablet) {
     margin-bottom: 59px;
     padding: 36px 0 27px;
-    border: 2px solid #E5E5E5;
+    border: 2px solid #e5e5e5;
     grid-row: 3/4;
   }
 
@@ -22,6 +22,7 @@
 
   @media (min-width: $tablet) {
     display: block;
+    margin: 0 auto;
     padding: 0 32px;
   }
 }
@@ -95,7 +96,7 @@
       right: 0;
       width: 61px;
       height: 61px;
-      background-color: #E5E5E5;
+      background-color: #e5e5e5;
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -105,7 +106,7 @@
 .fieldset__input-wrapper--phone {
   @media (min-width: $tablet) {
     &::after {
-      background-image: url('../../../../img/decorative/phone-icon.svg');
+      background-image: url("../../../../img/decorative/phone-icon.svg");
     }
   }
 }
@@ -113,7 +114,7 @@
 .fieldset__input-wrapper--email {
   @media (min-width: $tablet) {
     &::after {
-      background-image: url('../../../../img/decorative/mail-icon.svg');
+      background-image: url("../../../../img/decorative/mail-icon.svg");
     }
   }
 }

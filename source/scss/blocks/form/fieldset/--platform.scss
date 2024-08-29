@@ -6,7 +6,7 @@
     width: 620px;
     margin: 0 auto 59px;
     padding: 51px 0 46px;
-    border: 2px solid #E5E5E5;
+    border: 2px solid #e5e5e5;
     grid-row: 2/3;
   }
 
@@ -62,11 +62,11 @@
 }
 
 .fieldset--platform .fieldset__label:hover .fieldset__radio {
-  border: 2px solid #283645;
+  border: 2px solid $prime-color-blue;
 }
 
 .fieldset--platform .fieldset__label:active .fieldset__radio {
-  border: 2px solid #D22856;
+  border: 2px solid $prime-color-red;
 }
 
 .fieldset--platform .fieldset__input:focus-visible ~ .fieldset__radio {
@@ -85,7 +85,7 @@
 
 .fieldset--platform .fieldset__text-value {
   margin: 0;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -97,9 +97,9 @@
   height: 41px;
   width: 41px;
   margin-right: 29px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
   border-radius: 50%;
-  background: #FFFFFF;
+  background: #ffffff;
   display: block;
   flex-shrink: 0;
 
@@ -109,5 +109,5 @@
 }
 
 .fieldset--platform .fieldset__input:checked ~ .fieldset__radio {
-  box-shadow: 0 0 0 11px $white inset, 0 0 0 20px #D22856 inset;
+  box-shadow: 0 0 0 11px $white inset, 0 0 0 20px $prime-color-red inset;
 }

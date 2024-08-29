@@ -26,7 +26,7 @@
   padding: 13px 0 7px;
 
   &--blue-background {
-    background-color: #283645;
+    background-color: $prime-color-blue;
   }
 
   &:not(:last-child) {
@@ -43,11 +43,11 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 61px;
     height: 61px;
-    background: url('../../../img/decorative/hit-ribbon-tablet.svg') no-repeat;
+    background: url("../../../img/decorative/hit-ribbon-tablet.svg") no-repeat;
   }
 
   &::after {
@@ -57,7 +57,7 @@
     left: 8px;
     width: auto;
     height: auto;
-    font-family: Open Sans;
+    font-family: $font-primary;
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
@@ -69,11 +69,11 @@
     &::before {
       content: "";
       position: absolute;
-      top: 0px;
-      left: 0px;
+      top: 0;
+      left: 0;
       width: 74px;
       height: 74px;
-      background: url('../../../img/decorative/hit-ribbon.svg') no-repeat;
+      background: url("../../../img/decorative/hit-ribbon.svg") no-repeat;
     }
 
     &::after {
@@ -86,7 +86,7 @@
 .price-table__rate-name {
   position: relative;
   margin: 0;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
@@ -103,7 +103,7 @@
 
 .price-table__price {
   margin: 0;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
@@ -123,8 +123,8 @@
   min-height: 45px;
   padding: 7.5px 0;
   padding-left: 15px;
-  border: 2px solid #E5E5E5;
-  font-family: Open Sans;
+  border: 2px solid #e5e5e5;
+  font-family: $font-primary;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -134,7 +134,7 @@
   }
 
   &--blue-text {
-    color: #283645;
+    color: $prime-color-blue;
   }
 
   @media (min-width: $desktop) {
@@ -148,7 +148,7 @@
 
 .price-table__is-included {
   position: relative;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
 
   &--white-background {
     background-color: $white;
@@ -156,9 +156,9 @@
 }
 
 .price-table__is-included--yes {
-  background: $white url('../../../img/decorative/tick-green.svg') center no-repeat;
+  background: $white url("../../../img/decorative/tick-green.svg") center no-repeat;
 }
 
 .price-table__is-included--no {
-  background: $white url('../../../img/decorative/x-figure.svg') center no-repeat;
+  background: $white url("../../../img/decorative/x-figure.svg") center no-repeat;
 }

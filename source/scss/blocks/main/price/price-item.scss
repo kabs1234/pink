@@ -15,7 +15,7 @@
     left: -2px;
     width: 74px;
     height: 74px;
-    background: url('../../../img/decorative/hit-ribbon.svg') no-repeat;
+    background: url("../../../img/decorative/hit-ribbon.svg") no-repeat;
   }
 
   &::after {
@@ -25,7 +25,7 @@
     left: 14px;
     width: auto;
     height: auto;
-    font-family: Open Sans;
+    font-family: $font-primary;
     font-size: 14px;
     font-weight: 400;
     line-height: 30px;
@@ -38,7 +38,7 @@
   padding-top: 12px;
   border: 2px solid $white;
   border-bottom: none;
-  background-color: #283645;
+  background-color: $prime-color-blue;
   overflow: hidden;
 }
 
@@ -53,7 +53,7 @@
 .price-item__name {
   position: relative;
   margin: 0;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
@@ -67,7 +67,7 @@
 .price-item__tag {
   margin: 0;
   margin-bottom: 26px;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 18px;
   font-weight: 300;
   line-height: 30px;
@@ -80,10 +80,10 @@
 
 .price-item__feature {
   padding: 15px 20px;
-  border: 1px solid #E5E5E5;
-  border-bottom: 2px solid #E5E5E5;
+  border: 1px solid #e5e5e5;
+  border-bottom: 2px solid #e5e5e5;
   border-top: none;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 30px;
@@ -105,7 +105,7 @@
     height: 21px;
     top: -43px;
     right: 20px;
-    background: url('../../../img/decorative/tick-green.svg') no-repeat;
+    background: url("../../../img/decorative/tick-green.svg") no-repeat;
   }
 }
 
@@ -117,6 +117,6 @@
     height: 27px;
     top: -47px;
     right: 21px;
-    background: url('../../../img/decorative/x-figure.svg') no-repeat;
+    background: url("../../../img/decorative/x-figure.svg") no-repeat;
   }
 }

@@ -20,20 +20,13 @@
     "postcss": "8.3.11",
     "postcss-csso": "^6.0.1",
     "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "^0.1.11",
-    "@htmlacademy/editorconfig-cli": "1.0.0"
+    "stylelint-config-htmlacademy": "^0.1.11"
   },
   "scripts": {
-    "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"./source/scss/**/*.scss\" --syntax scss",
-    "lint": "npm run editorconfig",
     "build": "gulp build",
     "start": "gulp"
   },
-  "editorconfig-cli": [
-    "*.json",
-    "source/*.html"
-  ],
   "engines": {
     "node": "^16"
   }

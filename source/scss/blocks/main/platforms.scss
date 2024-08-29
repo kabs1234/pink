@@ -1,6 +1,6 @@
 .platforms {
   &--blue-background {
-    background-color: #1D2631;
+    background-color: #1d2631;
 
     @media (min-width: $tablet) {
       background-color: transparent;
@@ -13,10 +13,10 @@
   min-height: 55px;
   margin: 0 auto 29px;
   padding: 15.5px 36px;
-  border: 3px solid #FFFFFF;
+  border: 3px solid #ffffff;
   border-radius: 29px;
   display: block;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -26,12 +26,12 @@
 
   &:hover {
     background-color: $white;
-    color: #D22856;
+    color: $prime-color-red;
   }
 
   &:active {
     background-color: $white;
-    color: rgba($color: #D22856, $alpha: 0.3);
+    color: rgba($color: $prime-color-red, $alpha: 0.3);
   }
 
   @media (min-width: $tablet) {
@@ -80,24 +80,24 @@
 .platforms__link--apple {
   width: 47px;
   height: 56px;
-  background: url('../../../img/content/apple-logo.svg') center no-repeat;
+  background: url("../../../img/content/apple-logo.svg") center no-repeat;
 }
 
 .platforms__link--android {
   width: 43px;
   height: 47px;
-  background: url('../../../img/content/android-logo.svg') center no-repeat;
+  background: url("../../../img/content/android-logo.svg") center no-repeat;
 }
 
 .platforms__link--microsoft {
   width: 44px;
   height: 41px;
-  background: url('../../../img/content/microsoft-logo.svg') center no-repeat;
+  background: url("../../../img/content/microsoft-logo.svg") center no-repeat;
 }
 
 .platforms__description {
   margin: 0;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;

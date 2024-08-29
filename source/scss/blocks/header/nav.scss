@@ -15,15 +15,32 @@
   }
 }
 
-.nav__list {
-  display: none;
-
-  &--opened {
+.nav--nojs {
+  @media (max-width: 1199px) {
+    width: 100%;
+    background-color: $prime-color-blue;
     display: block;
   }
+}
 
-  @media (min-width: $desktop) {
+.nav--nojs .nav__list {
+  @media (max-width: 1199px) {
+    position: static;
     display: block;
+  }
+}
+
+.nav--nojs .nav__button {
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.nav--nojs .nav__main-link {
+  @media (max-width: 1199px) {
+    padding: 25px 0;
+    display: block;
+    text-align: center;
   }
 }
 
@@ -40,12 +57,21 @@
 }
 
 .nav__main-link:hover .nav__logo {
-  filter: brightness(0) saturate(100%) invert(22%) sepia(95%) saturate(4284%) hue-rotate(333deg) brightness(89%) contrast(83%);
+  filter: brightness(0) saturate(100%) invert(35%) sepia(73%) saturate(7406%) hue-rotate(332deg) brightness(88%) contrast(86%);
 }
 
 .nav__main-link:active .nav__logo {
-  filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(5976%) hue-rotate(153deg) brightness(113%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(93%) sepia(100%) saturate(2%) hue-rotate(55deg) brightness(108%) contrast(100%);
   opacity: 0.3;
+}
+
+.nav__main-link--active:hover .nav__logo {
+  filter: none;
+}
+
+.nav__main-link--active:active .nav__logo {
+  filter: none;
+  opacity: 1;
 }
 
 .nav__logo {
@@ -85,8 +111,8 @@
 
 .nav__button:hover {
   &::before {
-    background-color: #D22856;
-    box-shadow: 0 -10px 0 0 #D22856, 0 10px 0 0 #D22856;
+    background-color: $prime-color-red;
+    box-shadow: 0 -10px 0 0 $prime-color-red, 0 10px 0 0 $prime-color-red;
   }
 }
 
@@ -109,7 +135,7 @@
     right: -3px;
     width: 29px;
     height: 3px;
-    background-color: white;
+    background-color: $white;
     transform: rotate(-45deg);
     box-shadow: none;
   }
@@ -117,12 +143,12 @@
 
 .nav__button--active:hover {
   &::before {
-    background-color: #D22856;
+    background-color: $prime-color-red;
     box-shadow: none;
   }
 
   &::after {
-    background-color: #D22856;
+    background-color: $prime-color-red;
   }
 }
 
@@ -133,12 +159,18 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  display: none;
   list-style-type: none;
   z-index: 1;
+
+  &--opened {
+    display: block;
+  }
 
   @media (min-width: $tablet) {
     top: 110px;
   }
+
   @media (min-width: $desktop) {
     position: static;
     display: flex;
@@ -147,9 +179,9 @@
 }
 
 .nav__item {
-  background-color: $prime-color;
+  background-color: $prime-color-blue;
   text-align: center;
-  box-shadow: 0px -1px 0px 0px #000000, 0px 1px 0px 0px #FFFFFF26 inset;
+  box-shadow: 0 -1px 0 0 #000000, 0 1px 0 0 #ffffff26 inset;
 
   @media (min-width: $desktop) {
     background-color: transparent;
@@ -164,6 +196,14 @@
 .nav__item--active .nav__link {
   @media (min-width: $desktop) {
     position: relative;
+
+    &:hover {
+      color: $white;
+    }
+
+    &:active {
+      color: $white;
+    }
 
     &::before {
       content: "";
@@ -181,7 +221,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 18px;
   font-weight: 700;
   line-height: 32px;
@@ -190,11 +230,11 @@
   text-decoration: none;
 
   &:hover {
-    color: #D22856;
+    color: $prime-color-red;
   }
 
   &:active {
-    color: rgba($color: #D22856, $alpha: 0.3);
+    color: rgba($color: $prime-color-red, $alpha: 0.3);
   }
 
   @media (min-width: $desktop) {

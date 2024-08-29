@@ -37,22 +37,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Open Sans;
+    font-family: $font-primary;
     font-size: 96px;
     font-weight: 700;
     line-height: 163px;
-    color: #D22856;
-    box-shadow: 0px 0px 0 15px #D22856 inset;
+    color: $prime-color-red;
+    box-shadow: 0 0 0 15px $prime-color-red inset;
   }
 
   &::after {
     content: "";
     position: absolute;
     top: 24px;
-    left: 0px;
+    left: 0;
     width: 238px;
     height: 276px;
-    background: url('../../../img/decorative/timer.svg') no-repeat;
+    background: url("../../../img/decorative/timer.svg") no-repeat;
     z-index: -1;
   }
 
@@ -73,14 +73,14 @@
       left: calc(50vw - 470px);
       width: 298px;
       height: 345px;
-      background: url('../../../img/decorative/timer-desktop.svg') no-repeat;
+      background: url("../../../img/decorative/timer-desktop.svg") no-repeat;
     }
   }
 }
 
 .effect--grey-background {
   @media (min-width: $desktop) {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
     z-index: 0;
   }
 }
@@ -98,7 +98,7 @@
 .effect__heading {
   margin: 0;
   margin-bottom: 11px;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -120,7 +120,7 @@
 .effect__text {
   margin: 0;
   margin-bottom: 10px;
-  font-family: Open Sans;
+  font-family: $font-primary;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -137,25 +137,25 @@
 }
 
 .effect__link {
-  border-bottom: 1px solid #D22856;
-  font-family: Open Sans;
+  border-bottom: 1px solid $prime-color-red;
+  font-family: $font-primary;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   text-decoration: none;
 
   &:hover {
-    color: #283645;
-    border-bottom: 1px solid #283645;
+    color: $prime-color-blue;
+    border-bottom: 1px solid $prime-color-blue;
   }
 
   &:active {
-    color: rgba($color: #283645, $alpha: 0.3);
-    border-bottom: 1px solid #283645;
+    color: rgba($color: $prime-color-blue, $alpha: 0.3);
+    border-bottom: 1px solid $prime-color-blue;
   }
 
   &--red-text {
-    color: #D22856;
+    color: $prime-color-red;
   }
 
   @media (min-width: $desktop) {
