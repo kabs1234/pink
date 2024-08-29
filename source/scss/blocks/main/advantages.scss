@@ -84,12 +84,12 @@
   @media (min-width: $desktop) {
     &::before {
       left: 54px;
-      background: url("../../../img/decorative/screen-mood-desktop.jpg") 8px 40px no-repeat, url("../../../img/decorative/phone-background-desktop.png") no-repeat;
+      background: url("../img/decorative/screen-mood-desktop.jpg") 8px 40px no-repeat, url("../img/decorative/phone-background-desktop.png") no-repeat;
     }
 
     @media (min-resolution: 2dppx) {
       &::before {
-        background: url("../../../img/decorative/screen-mood-desktop@2x.jpg") 8px 40px/169px 298px no-repeat, url("../../../img/decorative/phone-background-desktop@2x.png") 0 0 / 186px 382px no-repeat;
+        background: url("../img/decorative/screen-mood-desktop@2x.jpg") 8px 40px/169px 298px no-repeat, url("../img/decorative/phone-background-desktop@2x.png") 0 0 / 186px 382px no-repeat;
       }
     }
   }
@@ -99,12 +99,12 @@
   @media (min-width: $desktop) {
     &::before {
       left: 58px;
-      background: url("../../../img/decorative/screen-changes-desktop.jpg") 8px 40px no-repeat, url("../../../img/decorative/phone-background-desktop.png") no-repeat;
+      background: url("../img/decorative/screen-changes-desktop.jpg") 8px 40px no-repeat, url("../img/decorative/phone-background-desktop.png") no-repeat;
     }
 
     @media (min-resolution: 2dppx) {
       &::before {
-        background: url("../../../img/decorative/screen-changes-desktop@2x.jpg") 8px 40px/169px 298px no-repeat, url("../../../img/decorative/phone-background-desktop@2x.png") 0 0 / 186px 382px no-repeat;
+        background: url("../img/decorative/screen-changes-desktop@2x.jpg") 8px 40px/169px 298px no-repeat, url("../img/decorative/phone-background-desktop@2x.png") 0 0 / 186px 382px no-repeat;
       }
     }
   }
@@ -114,12 +114,12 @@
   @media (min-width: $desktop) {
     &::before {
       left: 62px;
-      background: url("../../../img/decorative/screen-friends-desktop.jpg") 8px 40px no-repeat, url("../../../img/decorative/phone-background-desktop.png") no-repeat;
+      background: url("../img/decorative/screen-friends-desktop.jpg") 8px 40px no-repeat, url("../img/decorative/phone-background-desktop.png") no-repeat;
     }
 
     @media (min-resolution: 2dppx) {
       &::before {
-        background: url("../../../img/decorative/screen-friends-desktop@2x.jpg") 8px 40px/169px 298px no-repeat, url("../../../img/decorative/phone-background-desktop@2x.png") 0 0 / 186px 382px no-repeat;
+        background: url("../img/decorative/screen-friends-desktop@2x.jpg") 8px 40px/169px 298px no-repeat, url("../img/decorative/phone-background-desktop@2x.png") 0 0 / 186px 382px no-repeat;
       }
     }
   }

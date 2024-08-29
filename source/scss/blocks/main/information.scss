@@ -56,14 +56,14 @@
     width: 157px;
     height: 277px;
     margin: 0 auto;
-    background: url("../../../img/decorative/screen-friends-mobile.jpg") 8px 35px no-repeat,
-    url("../../../img/decorative/phone-background-mobile.png") 0 0 no-repeat;
+    background: url("../img/decorative/screen-friends-mobile.jpg") 8px 35px no-repeat,
+    url("../img/decorative/phone-background-mobile.png") 0 0 no-repeat;
   }
 
   @media (min-resolution: 2dppx) {
     &::after {
-      background: url("../../../img/decorative/screen-friends-mobile@2x.jpg") 8px 35px / 140px 249px no-repeat,
-      url("../../../img/decorative/phone-background-mobile@2x.png") 0 0 /157px 320px no-repeat;
+      background: url("../img/decorative/screen-friends-mobile@2x.jpg") 8px 35px / 140px 249px no-repeat,
+      url("../img/decorative/phone-background-mobile@2x.png") 0 0 /157px 320px no-repeat;
     }
   }
 
@@ -74,14 +74,14 @@
       margin: 0;
       width: 268px;
       height: 481px;
-      background: url("../../../img/decorative/screen-friends-tablet.jpg") 13px 59px no-repeat,
-        url("../../../img/decorative/phone-background-tablet.png") 0 0 no-repeat;
+      background: url("../img/decorative/screen-friends-tablet.jpg") 13px 59px no-repeat,
+        url("../img/decorative/phone-background-tablet.png") 0 0 no-repeat;
     }
 
     @media (min-resolution: 2dppx) {
       &::after {
-        background: url("../../../img/decorative/screen-friends-tablet@2x.jpg") 13px 59px / 241px 425px no-repeat,
-        url("../../../img/decorative/phone-background-tablet@2x.png") 0 0 /268px 547px no-repeat;
+        background: url("../img/decorative/screen-friends-tablet@2x.jpg") 13px 59px / 241px 425px no-repeat,
+        url("../img/decorative/phone-background-tablet@2x.png") 0 0 /268px 547px no-repeat;
       }
     }
   }

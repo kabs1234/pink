@@ -65,13 +65,13 @@
 .comment__button {
   padding-left: 32px;
   border: none;
-  background: url("../../../img/decorative/heart.svg") left center no-repeat;
+  background: url("../img/decorative/heart.svg") left center no-repeat;
 
   @media (min-width: $tablet) {
     text-align: left;
     padding: 0;
     width: 100%;
-    background: url("../../../img/decorative/heart.svg") right center no-repeat;
+    background: url("../img/decorative/heart.svg") right center no-repeat;
   }
 }
 
@@ -128,7 +128,7 @@
     width: auto;
     padding-left: 0;
     padding-right: 30px;
-    background: url("../../../img/decorative/heart.svg") right center no-repeat;
+    background: url("../img/decorative/heart.svg") right center no-repeat;
     grid-column: 2/3;
     grid-row: 1/2;
     justify-self: end;

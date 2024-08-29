@@ -106,7 +106,7 @@
 .fieldset__input-wrapper--phone {
   @media (min-width: $tablet) {
     &::after {
-      background-image: url("../../../../img/decorative/phone-icon.svg");
+      background-image: url("../img/decorative/phone-icon.svg");
     }
   }
 }
@@ -114,7 +114,7 @@
 .fieldset__input-wrapper--email {
   @media (min-width: $tablet) {
     &::after {
-      background-image: url("../../../../img/decorative/mail-icon.svg");
+      background-image: url("../img/decorative/mail-icon.svg");
     }
   }
 }

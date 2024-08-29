@@ -10,20 +10,20 @@
     width: 100%;
     height: 123px;
     margin: 0 auto;
-    background: url("../../../img/decorative/triangle-background.svg") 50% -96px no-repeat;
+    background: url("../img/decorative/triangle-background.svg") 50% -96px no-repeat;
   }
 
   @media (min-width: $tablet) {
     &::before {
       top: -1px;
-      background: url("../../../img/decorative/triangle-background.svg") 50% 0/auto 68px no-repeat;
+      background: url("../img/decorative/triangle-background.svg") 50% 0/auto 68px no-repeat;
     }
   }
 
   @media (min-width: $desktop) {
     &::before {
       top: -18px;
-      background: url("../../../img/decorative/triangle-background.svg") 50% 0/auto 123px no-repeat;
+      background: url("../img/decorative/triangle-background.svg") 50% 0/auto 123px no-repeat;
     }
   }
 }

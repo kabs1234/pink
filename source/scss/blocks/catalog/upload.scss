@@ -160,13 +160,16 @@
 .upload-menu__filter-button--crop {
   width: 44px;
   height: 44px;
-  mask: url("../../../img/content/crop.svg") center / 44px no-repeat;
+  -webkit-mask: url("../img/content/crop.svg") center / 44px no-repeat;
+  mask: url("../img/content/crop.svg") center / 44px no-repeat;
 
   @media (min-width: $tablet) {
+    -webkit-mask-size: 22px;
     mask-size: 22px;
   }
 
   @media (min-width: $desktop) {
+    -webkit-mask-size: 44px;
     mask-size: 44px;
   }
 }
@@ -174,13 +177,16 @@
 .upload-menu__filter-button--fill {
   width: 48px;
   height: 43px;
-  mask: url("../../../img/content/fill.svg") center / 48px 43px no-repeat;
+  -webkit-mask: url("../img/content/fill.svg") center / 48px 43px no-repeat;
+  mask: url("../img/content/fill.svg") center / 48px 43px no-repeat;
 
   @media (min-width: $tablet) {
+    -webkit-mask-size: 24px 22px;
     mask-size: 24px 22px;
   }
 
   @media (min-width: $desktop) {
+    -webkit-mask-size: 48px 43px;
     mask-size: 48px 43px;
   }
 }
@@ -188,14 +194,17 @@
 .upload-menu__filter-button--contrast {
   width: 32px;
   height: 32px;
-  mask: url("../../../img/content/contrast.svg") center / 32px no-repeat;
+  -webkit-mask: url("../img/content/contrast.svg") center / 32px no-repeat;
+  mask: url("../img/content/contrast.svg") center / 32px no-repeat;
 
   @media (min-width: $tablet) {
     background-color: $prime-color-red;
+    -webkit-mask-size: 16px;
     mask-size: 16px;
   }
 
   @media (min-width: $desktop) {
+    -webkit-mask-size: 32px;
     mask-size: 32px;
   }
 }

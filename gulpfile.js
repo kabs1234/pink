@@ -16,7 +16,7 @@ const browserSync = require('browser-sync').create();
 
 // Styles
 const styles = () => {
-  return gulp.src('./source/scss/global/styles.scss', { sourcemaps: true })
+  return gulp.src('source/scss/global/styles.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([autoprefixer()]))
@@ -29,7 +29,7 @@ exports.styles = styles;
 // minStyles
 
 const minStyles = () => {
-  return gulp.src("./source/scss/global/styles.scss")
+  return gulp.src("source/scss/global/styles.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -38,7 +38,7 @@ const minStyles = () => {
     csso()
     ]))
     .pipe(sourcemap.write("."))
-    .pipe(rename("style.min.css"))
+    .pipe(rename("styles.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(browserSync.stream());
 }
@@ -48,13 +48,13 @@ exports.minStyles = minStyles;
 // optimizeImages
 
 const optimizeImages = () => {
-  return gulp.src('source/images/**/*.{jpg,png,svg}')
+  return gulp.src('source/img/**/*.{jpg,png,svg}')
     .pipe(imgmin([
       imgmin.optipng({optimizationLevel: 3}),
       imgmin.mozjpeg({progressive: true}),
       imgmin.svgo()
       ]))
-    .pipe(gulp.dest('build/images'))
+    .pipe(gulp.dest('build/img'))
 }
 
 exports.optimizeImages = optimizeImages;
@@ -62,8 +62,8 @@ exports.optimizeImages = optimizeImages;
 // copyImages
 
 const copyImages = () => {
-  return gulp.src('source/images/**/*.{jpg,png,svg}')
-    .pipe(gulp.dest('build/images'))
+  return gulp.src('source/img/**/*.{jpg,png,svg}')
+    .pipe(gulp.dest('build/img'))
 }
 
 exports.copyImages = copyImages;
@@ -71,9 +71,9 @@ exports.copyImages = copyImages;
 // webP
 
 const createWebp = () => {
-  return gulp.src('source/images/**/*.{jpg,png}')
+  return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest('build/images'))
+    .pipe(gulp.dest('build/img'))
 }
 
 exports.createWebp = createWebp;
@@ -105,7 +105,7 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2, woff}",
     "source/*.ico",
-    "source/images/**/*.svg"
+    "source/img/**/*.svg"
   ], {
     base: "source"
   })
@@ -140,8 +140,8 @@ exports.server = server;
 
 // Watcher
 const watcher = () => {
-  gulp.watch('./source/scss/**/*.scss', gulp.series(styles));
-  gulp.watch('./source/js/app.js', browserSync.reload);
+  gulp.watch('source/scss/**/*.scss', gulp.series(styles));
+  gulp.watch('source/js/app.js', browserSync.reload);
   gulp.watch('source/*.html').on('change', browserSync.reload);
 };
 
@@ -151,7 +151,7 @@ const build = gulp.series(
   clean,
   copy,
   copyImages,
-  // optimizeImages,
+  optimizeImages,
   gulp.parallel(
     minStyles,
     minHtml,

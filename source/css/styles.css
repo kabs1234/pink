@@ -4,21 +4,21 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: local("Open Sans"), local("Open Sans Regular"), url("../../fonts/OpenSans-Regular.woff2") format(woff2), url("../../fonts/OpenSans-Regular.woff") format(woff);
+  src: local("Open Sans"), local("Open Sans Regular"), url("../fonts/OpenSans-Regular.woff2") format(woff2), url("../fonts/OpenSans-Regular.woff") format(woff);
 }
 @font-face {
   font-family: "Open Sans";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: local("Open Sans"), local("Open Sans Bold"), url("../../fonts/OpenSans-Bold.woff2") format(woff2), url("../../fonts/OpenSans-Bold.woff") format(woff);
+  src: local("Open Sans"), local("Open Sans Bold"), url("../fonts/OpenSans-Bold.woff2") format(woff2), url("../fonts/OpenSans-Bold.woff") format(woff);
 }
 @font-face {
   font-family: "Open Sans";
   font-weight: 300;
   font-style: normal;
   font-display: swap;
-  src: local("Open Sans"), local("Open Sans Light"), url("../../fonts/OpenSans-Light.woff2") format(woff2), url("../../fonts/OpenSans-Light.woff") format(woff);
+  src: local("Open Sans"), local("Open Sans Light"), url("../fonts/OpenSans-Light.woff2") format(woff2), url("../fonts/OpenSans-Light.woff") format(woff);
 }
 *,
 *::before,
@@ -520,12 +520,12 @@ template {
   left: calc(50vw - 160px);
   width: 320px;
   height: 286px;
-  background: url("../../../img/decorative/holding-phone-mobile.png") 0 0 no-repeat, url("../../../img/decorative/phone-screen-mobile.jpg") 104px 33px no-repeat;
+  background: url("../img/decorative/holding-phone-mobile.png") 0 0 no-repeat, url("../img/decorative/phone-screen-mobile.jpg") 104px 33px no-repeat;
   z-index: 1;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .main-promo--phone-background::after {
-    background: url("../../../img/decorative/holding-phone-mobile@2x.png") 0 0/320px 286px no-repeat, url("../../../img/decorative/phone-screen-mobile@2x.jpg") 104px 33px/111px 197px no-repeat;
+    background: url("../img/decorative/holding-phone-mobile@2x.png") 0 0/320px 286px no-repeat, url("../img/decorative/phone-screen-mobile@2x.jpg") 104px 33px/111px 197px no-repeat;
   }
 }
 @media (min-width: 660px) {
@@ -535,12 +535,12 @@ template {
     left: calc(50vw - 330px);
     width: 660px;
     height: 545px;
-    background: url("../../../img/decorative/holding-phone-tablet.png") 0 0 no-repeat, url("../../../img/decorative/phone-screen-tablet.jpg") 372px 53px no-repeat;
+    background: url("../img/decorative/holding-phone-tablet.png") 0 0 no-repeat, url("../img/decorative/phone-screen-tablet.jpg") 372px 53px no-repeat;
   }
 }
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {
   .main-promo--phone-background::after {
-    background: url("../../../img/decorative/holding-phone-tablet@2x.png") 0 0/660px 545px no-repeat, url("../../../img/decorative/phone-screen-tablet@2x.jpg") 372px 53px/195px 346px no-repeat;
+    background: url("../img/decorative/holding-phone-tablet@2x.png") 0 0/660px 545px no-repeat, url("../img/decorative/phone-screen-tablet@2x.jpg") 372px 53px/195px 346px no-repeat;
   }
 }
 @media (min-width: 1200px) {
@@ -548,12 +548,12 @@ template {
     left: calc(50vw - 454px);
     width: 884px;
     height: 645px;
-    background: url("../../../img/decorative/holding-phone-desktop.png") no-repeat, url("../../../img/decorative/phone-screen-desktop.jpg") 570px 65px no-repeat;
+    background: url("../img/decorative/holding-phone-desktop.png") no-repeat, url("../img/decorative/phone-screen-desktop.jpg") 570px 65px no-repeat;
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
   .main-promo--phone-background::after {
-    background: url("../../../img/decorative/holding-phone-desktop@2x.png") 0 0/1050px 645px no-repeat, url("../../../img/decorative/phone-screen-desktop@2x.jpg") 570px 65px/230px 408px no-repeat;
+    background: url("../img/decorative/holding-phone-desktop@2x.png") 0 0/1050px 645px no-repeat, url("../img/decorative/phone-screen-desktop@2x.jpg") 570px 65px/230px 408px no-repeat;
   }
 }
 
@@ -563,7 +563,7 @@ template {
   top: -73px;
   width: 100%;
   height: 462px;
-  background-image: url("../../../img/decorative/promo-index-mobile.jpg");
+  background-image: url("../img/decorative/promo-index-mobile.jpg");
   background-position: 50% 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -571,31 +571,31 @@ template {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .main-promo--city-background::before {
-    background-image: url("../../../img/decorative/promo-index-mobile@2x.jpg");
+    background-image: url("../img/decorative/promo-index-mobile@2x.jpg");
   }
 }
 @media (min-width: 660px) {
   .main-promo--city-background::before {
     top: -110px;
     height: 729px;
-    background-image: url("../../../img/decorative/promo-index-tablet.jpg");
+    background-image: url("../img/decorative/promo-index-tablet.jpg");
   }
 }
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {
   .main-promo--city-background::before {
-    background-image: url("../../../img/decorative/promo-index-tablet@2x.jpg");
+    background-image: url("../img/decorative/promo-index-tablet@2x.jpg");
   }
 }
 @media (min-width: 1200px) {
   .main-promo--city-background::before {
     top: -110px;
     height: 853px;
-    background-image: url("../../../img/decorative/promo-index-desktop.jpg");
+    background-image: url("../img/decorative/promo-index-desktop.jpg");
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
   .main-promo--city-background::before {
-    background-image: url("../../../img/decorative/promo-index-desktop@2x.jpg");
+    background-image: url("../img/decorative/promo-index-desktop@2x.jpg");
   }
 }
 
@@ -742,19 +742,19 @@ template {
 .platforms__link--apple {
   width: 47px;
   height: 56px;
-  background: url("../../../img/content/apple-logo.svg") center no-repeat;
+  background: url("../img/content/apple-logo.svg") center no-repeat;
 }
 
 .platforms__link--android {
   width: 43px;
   height: 47px;
-  background: url("../../../img/content/android-logo.svg") center no-repeat;
+  background: url("../img/content/android-logo.svg") center no-repeat;
 }
 
 .platforms__link--microsoft {
   width: 44px;
   height: 41px;
-  background: url("../../../img/content/microsoft-logo.svg") center no-repeat;
+  background: url("../img/content/microsoft-logo.svg") center no-repeat;
 }
 
 .platforms__description {
@@ -827,11 +827,11 @@ template {
   width: 157px;
   height: 277px;
   margin: 0 auto;
-  background: url("../../../img/decorative/screen-friends-mobile.jpg") 8px 35px no-repeat, url("../../../img/decorative/phone-background-mobile.png") 0 0 no-repeat;
+  background: url("../img/decorative/screen-friends-mobile.jpg") 8px 35px no-repeat, url("../img/decorative/phone-background-mobile.png") 0 0 no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .information__wrapper--phone-decorative::after {
-    background: url("../../../img/decorative/screen-friends-mobile@2x.jpg") 8px 35px/140px 249px no-repeat, url("../../../img/decorative/phone-background-mobile@2x.png") 0 0/157px 320px no-repeat;
+    background: url("../img/decorative/screen-friends-mobile@2x.jpg") 8px 35px/140px 249px no-repeat, url("../img/decorative/phone-background-mobile@2x.png") 0 0/157px 320px no-repeat;
   }
 }
 @media (min-width: 660px) {
@@ -841,12 +841,12 @@ template {
     margin: 0;
     width: 268px;
     height: 481px;
-    background: url("../../../img/decorative/screen-friends-tablet.jpg") 13px 59px no-repeat, url("../../../img/decorative/phone-background-tablet.png") 0 0 no-repeat;
+    background: url("../img/decorative/screen-friends-tablet.jpg") 13px 59px no-repeat, url("../img/decorative/phone-background-tablet.png") 0 0 no-repeat;
   }
 }
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {
   .information__wrapper--phone-decorative::after {
-    background: url("../../../img/decorative/screen-friends-tablet@2x.jpg") 13px 59px/241px 425px no-repeat, url("../../../img/decorative/phone-background-tablet@2x.png") 0 0/268px 547px no-repeat;
+    background: url("../img/decorative/screen-friends-tablet@2x.jpg") 13px 59px/241px 425px no-repeat, url("../img/decorative/phone-background-tablet@2x.png") 0 0/268px 547px no-repeat;
   }
 }
 @media (min-width: 1200px) {
@@ -994,36 +994,36 @@ template {
 @media (min-width: 1200px) {
   .advantages__item--mood::before {
     left: 54px;
-    background: url("../../../img/decorative/screen-mood-desktop.jpg") 8px 40px no-repeat, url("../../../img/decorative/phone-background-desktop.png") no-repeat;
+    background: url("../img/decorative/screen-mood-desktop.jpg") 8px 40px no-repeat, url("../img/decorative/phone-background-desktop.png") no-repeat;
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
   .advantages__item--mood::before {
-    background: url("../../../img/decorative/screen-mood-desktop@2x.jpg") 8px 40px/169px 298px no-repeat, url("../../../img/decorative/phone-background-desktop@2x.png") 0 0/186px 382px no-repeat;
+    background: url("../img/decorative/screen-mood-desktop@2x.jpg") 8px 40px/169px 298px no-repeat, url("../img/decorative/phone-background-desktop@2x.png") 0 0/186px 382px no-repeat;
   }
 }
 
 @media (min-width: 1200px) {
   .advantages__item--changes::before {
     left: 58px;
-    background: url("../../../img/decorative/screen-changes-desktop.jpg") 8px 40px no-repeat, url("../../../img/decorative/phone-background-desktop.png") no-repeat;
+    background: url("../img/decorative/screen-changes-desktop.jpg") 8px 40px no-repeat, url("../img/decorative/phone-background-desktop.png") no-repeat;
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
   .advantages__item--changes::before {
-    background: url("../../../img/decorative/screen-changes-desktop@2x.jpg") 8px 40px/169px 298px no-repeat, url("../../../img/decorative/phone-background-desktop@2x.png") 0 0/186px 382px no-repeat;
+    background: url("../img/decorative/screen-changes-desktop@2x.jpg") 8px 40px/169px 298px no-repeat, url("../img/decorative/phone-background-desktop@2x.png") 0 0/186px 382px no-repeat;
   }
 }
 
 @media (min-width: 1200px) {
   .advantages__item--friends::before {
     left: 62px;
-    background: url("../../../img/decorative/screen-friends-desktop.jpg") 8px 40px no-repeat, url("../../../img/decorative/phone-background-desktop.png") no-repeat;
+    background: url("../img/decorative/screen-friends-desktop.jpg") 8px 40px no-repeat, url("../img/decorative/phone-background-desktop.png") no-repeat;
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
   .advantages__item--friends::before {
-    background: url("../../../img/decorative/screen-friends-desktop@2x.jpg") 8px 40px/169px 298px no-repeat, url("../../../img/decorative/phone-background-desktop@2x.png") 0 0/186px 382px no-repeat;
+    background: url("../img/decorative/screen-friends-desktop@2x.jpg") 8px 40px/169px 298px no-repeat, url("../img/decorative/phone-background-desktop@2x.png") 0 0/186px 382px no-repeat;
   }
 }
 
@@ -1152,7 +1152,7 @@ template {
   left: 0;
   width: 238px;
   height: 276px;
-  background: url("../../../img/decorative/timer.svg") no-repeat;
+  background: url("../img/decorative/timer.svg") no-repeat;
   z-index: -1;
 }
 @media (min-width: 1200px) {
@@ -1171,7 +1171,7 @@ template {
     left: calc(50vw - 470px);
     width: 298px;
     height: 345px;
-    background: url("../../../img/decorative/timer-desktop.svg") no-repeat;
+    background: url("../img/decorative/timer-desktop.svg") no-repeat;
   }
 }
 
@@ -1288,7 +1288,7 @@ template {
     width: 79px;
     height: 63px;
     margin: 0 auto;
-    background: url("../../../img/decorative/quotes.svg") no-repeat;
+    background: url("../img/decorative/quotes.svg") no-repeat;
   }
 }
 
@@ -1303,7 +1303,7 @@ template {
     height: 50px;
     padding: 0;
     border: none;
-    background: url("../../../img/decorative/arrow.svg") no-repeat;
+    background: url("../img/decorative/arrow.svg") no-repeat;
     display: block;
     opacity: 0.3;
   }
@@ -1563,7 +1563,7 @@ template {
   left: -2px;
   width: 74px;
   height: 74px;
-  background: url("../../../img/decorative/hit-ribbon.svg") no-repeat;
+  background: url("../img/decorative/hit-ribbon.svg") no-repeat;
 }
 .price-item--best-seller .price-item__wrapper::after {
   content: "ХИТ";
@@ -1646,7 +1646,7 @@ template {
   height: 21px;
   top: -43px;
   right: 20px;
-  background: url("../../../img/decorative/tick-green.svg") no-repeat;
+  background: url("../img/decorative/tick-green.svg") no-repeat;
 }
 
 .price-item__is-included--no::before {
@@ -1656,7 +1656,7 @@ template {
   height: 27px;
   top: -47px;
   right: 21px;
-  background: url("../../../img/decorative/x-figure.svg") no-repeat;
+  background: url("../img/decorative/x-figure.svg") no-repeat;
 }
 
 .prices__table {
@@ -1708,7 +1708,7 @@ template {
   left: 0;
   width: 61px;
   height: 61px;
-  background: url("../../../img/decorative/hit-ribbon-tablet.svg") no-repeat;
+  background: url("../img/decorative/hit-ribbon-tablet.svg") no-repeat;
 }
 .price-table__rate--best-seller::after {
   content: "ХИТ";
@@ -1732,7 +1732,7 @@ template {
     left: 0;
     width: 74px;
     height: 74px;
-    background: url("../../../img/decorative/hit-ribbon.svg") no-repeat;
+    background: url("../img/decorative/hit-ribbon.svg") no-repeat;
   }
   .price-table__rate--best-seller::after {
     top: 16px;
@@ -1811,11 +1811,11 @@ template {
 }
 
 .price-table__is-included--yes {
-  background: #ffffff url("../../../img/decorative/tick-green.svg") center no-repeat;
+  background: #ffffff url("../img/decorative/tick-green.svg") center no-repeat;
 }
 
 .price-table__is-included--no {
-  background: #ffffff url("../../../img/decorative/x-figure.svg") center no-repeat;
+  background: #ffffff url("../img/decorative/x-figure.svg") center no-repeat;
 }
 
 .main__contacts {
@@ -1976,18 +1976,18 @@ template {
   width: 100%;
   height: 123px;
   margin: 0 auto;
-  background: url("../../../img/decorative/triangle-background.svg") 50% -96px no-repeat;
+  background: url("../img/decorative/triangle-background.svg") 50% -96px no-repeat;
 }
 @media (min-width: 660px) {
   .location::before {
     top: -1px;
-    background: url("../../../img/decorative/triangle-background.svg") 50% 0/auto 68px no-repeat;
+    background: url("../img/decorative/triangle-background.svg") 50% 0/auto 68px no-repeat;
   }
 }
 @media (min-width: 1200px) {
   .location::before {
     top: -18px;
-    background: url("../../../img/decorative/triangle-background.svg") 50% 0/auto 123px no-repeat;
+    background: url("../img/decorative/triangle-background.svg") 50% 0/auto 123px no-repeat;
   }
 }
 
@@ -2024,7 +2024,7 @@ template {
   top: -73px;
   width: 100%;
   height: 237px;
-  background-image: url("../../../img/decorative/promo-mobile.jpg");
+  background-image: url("../img/decorative/promo-mobile.jpg");
   background-position: 50% 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2032,7 +2032,7 @@ template {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .promo::before {
-    background-image: url("../../../img/decorative/promo-mobile@2x.jpg");
+    background-image: url("../img/decorative/promo-mobile@2x.jpg");
   }
 }
 @media (min-width: 660px) {
@@ -2042,12 +2042,12 @@ template {
   .promo::before {
     top: -110px;
     height: 440px;
-    background-image: url("../../../img/decorative/promo-tablet.jpg");
+    background-image: url("../img/decorative/promo-tablet.jpg");
   }
 }
 @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {
   .promo::before {
-    background-image: url("../../../img/decorative/promo-tablet@2x.jpg");
+    background-image: url("../img/decorative/promo-tablet@2x.jpg");
   }
 }
 @media (min-width: 1200px) {
@@ -2056,12 +2056,12 @@ template {
   }
   .promo::before {
     height: 394px;
-    background-image: url("../../../img/decorative/promo-desktop.jpg");
+    background-image: url("../img/decorative/promo-desktop.jpg");
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
   .promo::before {
-    background-image: url("../../../img/decorative/promo-desktop@2x.jpg");
+    background-image: url("../img/decorative/promo-desktop@2x.jpg");
   }
 }
 
@@ -2152,6 +2152,7 @@ template {
   position: relative;
   width: 320px;
   margin: 0 auto;
+  display: block;
 }
 .panorama__fullscreen-photo::before {
   content: "Панорама дня";
@@ -2263,14 +2264,14 @@ template {
 .comment__button {
   padding-left: 32px;
   border: none;
-  background: url("../../../img/decorative/heart.svg") left center no-repeat;
+  background: url("../img/decorative/heart.svg") left center no-repeat;
 }
 @media (min-width: 660px) {
   .comment__button {
     text-align: left;
     padding: 0;
     width: 100%;
-    background: url("../../../img/decorative/heart.svg") right center no-repeat;
+    background: url("../img/decorative/heart.svg") right center no-repeat;
   }
 }
 
@@ -2328,7 +2329,7 @@ template {
     width: auto;
     padding-left: 0;
     padding-right: 30px;
-    background: url("../../../img/decorative/heart.svg") right center no-repeat;
+    background: url("../img/decorative/heart.svg") right center no-repeat;
     grid-column: 2/3;
     grid-row: 1/2;
     justify-self: end;
@@ -2551,8 +2552,8 @@ template {
 .upload-menu__filter-button--crop {
   width: 44px;
   height: 44px;
-  -webkit-mask: url("../../../img/content/crop.svg") center/44px no-repeat;
-          mask: url("../../../img/content/crop.svg") center/44px no-repeat;
+  -webkit-mask: url("../img/content/crop.svg") center/44px no-repeat;
+          mask: url("../img/content/crop.svg") center/44px no-repeat;
 }
 @media (min-width: 660px) {
   .upload-menu__filter-button--crop {
@@ -2570,8 +2571,8 @@ template {
 .upload-menu__filter-button--fill {
   width: 48px;
   height: 43px;
-  -webkit-mask: url("../../../img/content/fill.svg") center/48px 43px no-repeat;
-          mask: url("../../../img/content/fill.svg") center/48px 43px no-repeat;
+  -webkit-mask: url("../img/content/fill.svg") center/48px 43px no-repeat;
+          mask: url("../img/content/fill.svg") center/48px 43px no-repeat;
 }
 @media (min-width: 660px) {
   .upload-menu__filter-button--fill {
@@ -2589,8 +2590,8 @@ template {
 .upload-menu__filter-button--contrast {
   width: 32px;
   height: 32px;
-  -webkit-mask: url("../../../img/content/contrast.svg") center/32px no-repeat;
-          mask: url("../../../img/content/contrast.svg") center/32px no-repeat;
+  -webkit-mask: url("../img/content/contrast.svg") center/32px no-repeat;
+          mask: url("../img/content/contrast.svg") center/32px no-repeat;
 }
 @media (min-width: 660px) {
   .upload-menu__filter-button--contrast {
@@ -3232,7 +3233,7 @@ template {
 }
 
 .fieldset--achievements .fieldset__input:checked ~ .fieldset__checkbox {
-  background: #ffffff url("../../../../img/decorative/tick.svg") center no-repeat;
+  background: #ffffff url("../img/decorative/tick.svg") center no-repeat;
 }
 
 .fieldset--contacts {
@@ -3342,13 +3343,13 @@ template {
 
 @media (min-width: 660px) {
   .fieldset__input-wrapper--phone::after {
-    background-image: url("../../../../img/decorative/phone-icon.svg");
+    background-image: url("../img/decorative/phone-icon.svg");
   }
 }
 
 @media (min-width: 660px) {
   .fieldset__input-wrapper--email::after {
-    background-image: url("../../../../img/decorative/mail-icon.svg");
+    background-image: url("../img/decorative/mail-icon.svg");
   }
 }
 
@@ -3859,15 +3860,15 @@ template {
 }
 
 .socials__item--twitter .socials__link {
-  background: url("../../../img/content/twitter.svg") center no-repeat;
+  background: url("../img/content/twitter.svg") center no-repeat;
 }
 
 .socials__item--facebook .socials__link {
-  background: url("../../../img/content/facebook.svg") center no-repeat;
+  background: url("../img/content/facebook.svg") center no-repeat;
 }
 
 .socials__item--youtube .socials__link {
-  background: url("../../../img/content/youtube.svg") center no-repeat;
+  background: url("../img/content/youtube.svg") center no-repeat;
 }
 
 .copyright {

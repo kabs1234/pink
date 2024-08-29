@@ -9,7 +9,7 @@
     top: -73px;
     width: 100%;
     height: 237px;
-    background-image: url("../../../img/decorative/promo-mobile.jpg");
+    background-image: url("../img/decorative/promo-mobile.jpg");
     background-position: 50% 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@
 
   @media (min-resolution: 2dppx) {
     &::before {
-      background-image: url("../../../img/decorative/promo-mobile@2x.jpg");
+      background-image: url("../img/decorative/promo-mobile@2x.jpg");
     }
   }
 
@@ -28,12 +28,12 @@
     &::before {
       top: -110px;
       height: 440px;
-      background-image: url("../../../img/decorative/promo-tablet.jpg");
+      background-image: url("../img/decorative/promo-tablet.jpg");
     }
 
     @media (min-resolution: 2dppx) {
       &::before {
-        background-image: url("../../../img/decorative/promo-tablet@2x.jpg");
+        background-image: url("../img/decorative/promo-tablet@2x.jpg");
       }
     }
   }
@@ -43,12 +43,12 @@
 
     &::before {
       height: 394px;
-      background-image: url("../../../img/decorative/promo-desktop.jpg");
+      background-image: url("../img/decorative/promo-desktop.jpg");
     }
 
     @media (min-resolution: 2dppx) {
       &::before {
-        background-image: url("../../../img/decorative/promo-desktop@2x.jpg");
+        background-image: url("../img/decorative/promo-desktop@2x.jpg");
       }
     }
   }

@@ -25,15 +25,15 @@
     left: calc(50vw - 160px);
     width: 320px;
     height: 286px;
-    background: url("../../../img/decorative/holding-phone-mobile.png") 0 0 no-repeat,
-    url("../../../img/decorative/phone-screen-mobile.jpg") 104px 33px no-repeat;
+    background: url("../img/decorative/holding-phone-mobile.png") 0 0 no-repeat,
+    url("../img/decorative/phone-screen-mobile.jpg") 104px 33px no-repeat;
     z-index: 1;
   }
 
   @media (min-resolution: 2dppx) {
     &::after {
-      background: url("../../../img/decorative/holding-phone-mobile@2x.png") 0 0/320px 286px no-repeat,
-      url("../../../img/decorative/phone-screen-mobile@2x.jpg") 104px 33px/111px 197px no-repeat;
+      background: url("../img/decorative/holding-phone-mobile@2x.png") 0 0/320px 286px no-repeat,
+      url("../img/decorative/phone-screen-mobile@2x.jpg") 104px 33px/111px 197px no-repeat;
     }
   }
 
@@ -44,14 +44,14 @@
       left: calc(50vw - 330px);
       width: 660px;
       height: 545px;
-      background: url("../../../img/decorative/holding-phone-tablet.png") 0 0 no-repeat,
-      url("../../../img/decorative/phone-screen-tablet.jpg") 372px 53px no-repeat;
+      background: url("../img/decorative/holding-phone-tablet.png") 0 0 no-repeat,
+      url("../img/decorative/phone-screen-tablet.jpg") 372px 53px no-repeat;
     }
 
     @media (min-resolution: 2dppx) {
       &::after {
-        background: url("../../../img/decorative/holding-phone-tablet@2x.png") 0 0/660px 545px no-repeat,
-        url("../../../img/decorative/phone-screen-tablet@2x.jpg") 372px 53px/195px 346px no-repeat;
+        background: url("../img/decorative/holding-phone-tablet@2x.png") 0 0/660px 545px no-repeat,
+        url("../img/decorative/phone-screen-tablet@2x.jpg") 372px 53px/195px 346px no-repeat;
       }
     }
   }
@@ -61,14 +61,14 @@
       left: calc(50vw - 454px);
       width: 884px;
       height: 645px;
-      background: url("../../../img/decorative/holding-phone-desktop.png") no-repeat,
-      url("../../../img/decorative/phone-screen-desktop.jpg") 570px 65px no-repeat;
+      background: url("../img/decorative/holding-phone-desktop.png") no-repeat,
+      url("../img/decorative/phone-screen-desktop.jpg") 570px 65px no-repeat;
     }
 
     @media (min-resolution: 2dppx) {
       &::after {
-        background: url("../../../img/decorative/holding-phone-desktop@2x.png") 0 0 / 1050px 645px no-repeat,
-        url("../../../img/decorative/phone-screen-desktop@2x.jpg") 570px 65px / 230px 408px no-repeat;
+        background: url("../img/decorative/holding-phone-desktop@2x.png") 0 0 / 1050px 645px no-repeat,
+        url("../img/decorative/phone-screen-desktop@2x.jpg") 570px 65px / 230px 408px no-repeat;
       }
     }
   }
@@ -81,7 +81,7 @@
     top: -73px;
     width: 100%;
     height: 462px;
-    background-image: url("../../../img/decorative/promo-index-mobile.jpg");
+    background-image: url("../img/decorative/promo-index-mobile.jpg");
     background-position: 50% 0;
     background-size: cover;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@
 
   @media (min-resolution: 2dppx) {
     &::before {
-      background-image: url("../../../img/decorative/promo-index-mobile@2x.jpg");
+      background-image: url("../img/decorative/promo-index-mobile@2x.jpg");
     }
   }
 
@@ -98,12 +98,12 @@
     &::before {
       top: -110px;
       height: 729px;
-      background-image: url("../../../img/decorative/promo-index-tablet.jpg");
+      background-image: url("../img/decorative/promo-index-tablet.jpg");
     }
 
     @media (min-resolution: 2dppx) {
       &::before {
-        background-image: url("../../../img/decorative/promo-index-tablet@2x.jpg");
+        background-image: url("../img/decorative/promo-index-tablet@2x.jpg");
       }
     }
   }
@@ -112,12 +112,12 @@
     &::before {
       top: -110px;
       height: 853px;
-      background-image: url("../../../img/decorative/promo-index-desktop.jpg");
+      background-image: url("../img/decorative/promo-index-desktop.jpg");
     }
 
     @media (min-resolution: 2dppx) {
       &::before {
-        background-image: url("../../../img/decorative/promo-index-desktop@2x.jpg");
+        background-image: url("../img/decorative/promo-index-desktop@2x.jpg");
       }
     }
   }
